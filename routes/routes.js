@@ -19,7 +19,7 @@ module.exports = function(express, app, passport, config, rooms){
 		successRedirect:'/user',
 		failureRedirect:'/'
 	}))
-	
+
   router.get('/auth/google', passport.authenticate('google',{scope : ['profile', 'email']}));
   router.get('/auth/google/callback', passport.authenticate('google', {
     successRedirect:'/user',
@@ -43,6 +43,10 @@ module.exports = function(express, app, passport, config, rooms){
 		var room_name = findTitle(req.params.id);
 		res.render('room', {user:req.user, room_number:req.params.id, config:config, room_name:room_name})
 	});
+
+	router.get("/reqtran", securePages, function(req, res, next) {
+    res.render("page");
+  });
 
 	function findTitle(room_id) {
 		var n=0;
