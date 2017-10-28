@@ -23,7 +23,7 @@ app.use(session({secret:'I am lulululu', resave:true, saveUninitialized:true}));
 
 
 var env = process.env.NODE_ENV || 'development';
-if (env === 'development') {
+/*if (env === 'development') {
 	app.use(session({secret:config.sessionSecret}))
 } else {
 	app.use(session({
@@ -35,6 +35,7 @@ if (env === 'development') {
 		})
 	}))
 }
+*/
 
 app.use(passport.initialize());
 app.use(passport.session());

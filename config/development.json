@@ -9,7 +9,7 @@
 	"googleAuth" : {
 		"clientID"      : "701474561243-ne741qr0il5st6cp5injigoaaneo7cis.apps.googleusercontent.com",
 		"clientSecret"  : "DdSz7JNyB0C8Q7vVtZEircWk",
-		"callbackURL"   : "http://localhost:9000/auth/google/callback"
+		"callbackURL"   : "http://localhost:90002/auth/google/callback"
 	},
 	"host":"http://localhost:9000"
 }
