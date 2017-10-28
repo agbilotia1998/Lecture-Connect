@@ -23,19 +23,7 @@ app.use(session({secret:'I am lulululu', resave:true, saveUninitialized:true}));
 
 
 var env = process.env.NODE_ENV || 'development';
-/*if (env === 'development') {
-	app.use(session({secret:config.sessionSecret}))
-} else {
-	app.use(session({
-		secret:config.sessionSecret,
-		store:new connect-mongo({
-			//url:config.dbURL,
-			mongoose_connection:mongoose.connection[0],
-			string:true
-		})
-	}))
-}
-*/
+
 
 app.use(passport.initialize());
 app.use(passport.session());
