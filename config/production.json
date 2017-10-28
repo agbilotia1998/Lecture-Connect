@@ -1,0 +1,10 @@
+{
+	"dbURL":"mongodb://siddhant:harshsri@ds025973.mlab.com:25973/chatbox",
+	"sessionSecret":"djgdjgdjhgdjgdjgdjhg",
+	"fb":{
+		"appID":"1833443723639550",
+		"appSecret":"f23781ed2b80d5275fa5e3694f38f6b1",
+		"callbackURL":"http://localhost:9000/auth/facebook/callback"
+	},
+	"host":""
+}

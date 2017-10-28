@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title><%- title %></title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		$(function() { 
+			var host = '<%- config.host %>';
+			var socket = io.connect(host + '/roomlist');
+			socket.on('connect', function(){
+				console.log('Connection Established!');
+			})
+			socket.on('roomupdate', function(data){
+				var procData = JSON.parse(data);
+				$('.roomlist').html('');
+				for (var i = 0; i < procData.length; i++) {
+					var str = '<a href="room/' + procData[i].room_number + '"><li>' + procData[i].room_name +'</li></a>';
+					$('.roomlist').prepend(str);
+				}
+			})
+			$(document).on('click', '#create', function() {
+				var room_name = $('.newRoom').val();
+				if(room_name != ''){
+					var room_number = parseInt(Math.random() * 10000);
+					socket.emit('newroom', {room_name:room_name, room_number:room_number});
+					$('.newRoom').val('');
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+	<h2 class="title">Steno</h2>
+ <div id="main">
+		<div id="navigation">
+			<img src="<%- user.profilePic %>" class="userPic">
+			<h3 class="userName"><%- user.fullname %></h3>
+			<a href="/user"><button class="nav">Home</button></a>
+			<a href="/user/todo"><button class="nav">Your to-do list</button></a>
+			<a href="/user/gethelp"><button class="nav">Get Help</button></a>
+			<a href="/logout"><button class="nav">Logout</button></a>			
+		</div>
+		<div style="top:1%; position: absolute; left: 10px;"><a href=""><i class="fa fa-github" style="font-size: 3em;"></i></a></div>
+		<div style="position: absolute; top: 2%; right: 10px;"><a href="">Give your Suggestions</a></div>
+		
+	<div id="platform">
+		<p>
+			Hello <%- user.fullname %>, Welcome to Steno. You can create your todo list which will be saved until you delete it. Moreover you can ask for help from the people who use the website by clicking the "Get Help". <br> Feel free to add suggestions for the web app.
+		</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+#main{
+	margin: 3% 3% 3% 3%;
+}
+body{
+	background-color:#DADADA;
+	font-family:futura ;
+	color: #474747;
+	margin:0;
+	padding: 0;
+	border:0;
+}
+a:link{
+	text-decoration: none;
+	border:none;
+	color:#DADADA;
+}
+a:visited{
+	color:#DADADA;
+	text-decoration: none;
+	border:none;
+}
+a:hover{
+	color:#DADADA;
+	text-decoration: none;
+	border:none;
+}
+a:acive{
+	color: #DADADA;
+	text-decoration: none;
+	border:none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding:0;
+}
+ul{
+	list-style-type: none;
+	
+}
+button{
+	display: block;
+	background-color: #707070;
+	border: none;
+	color: #DADADA;
+	box-shadow: 0px 10px 50px 0px #404040;
+	font-family: futura;
+	width: 100%;
+	padding: 7% 7% 6% 7%;
+	font-size: 20px;
+}
+button:hover{
+	font-size:25px;
+	border:none
+}
+
+input[type="text"]{
+	height: 40px;
+	background-color:#DADADA;
+	border-color: #474747;
+	font-size: 20px;
+	padding: 0 0 0 5px;
+	width: 100%;
+	margin:0% 0% 3% 0%;
+}
+.title{
+	font-size: 45px;
+	text-align: center;
+	width: 100%;
+	background-color:#404040;
+	color:white;
+	padding:2% 0% 2% 0%;	
+}
+
+#navigation{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+
+.userPic{
+	width:100%; 
+	text-align: center;
+	box-shadow: 0px 5px 30px  #909090;
+}
+.userName{
+	width:100%;
+	font-size: 120%;
+	text-align:center;
+	padding:2% 2% 2% 0%;
+	margin-bottom: 5%;
+	margin-top: 5%;	
+}
+
+.pic{
+	width: 30%;
+	height:30%;
+	box-shadow: 0px 5px 30px  #909090;
+}
+#platform{
+	float: right;
+	width: 75%;
+}
+
+#entry{
+	float: left;
+	width: 75%;
+	height: 5%;
+}
+#enter{
+	float: right;
+	width: 20%;
+	height: 
+}
+a:link.issuename{
+	color: #474747;
+}
+a:hover.issuename{
+	color: #474747;
+}
+a:active.issuename{
+	color: #474747;
+} 
+a:visited.issuename{
+	color: #474747;
+}
+#cr-roomlist{
+	width: 100%;
+	float: left;
+}
+.issue{
+	text-align: left;
+	font-size: 30px;
+}
+.msgbox{
+	
+}
+
+#login{
+	
+}
+#third{
+	width: 25%;
+	float: right;
+}
+#second{
+	float: left;
+	width: 70%;
+}
+.newmessage{
+	width: 100%;
+}
+#listitems{
+	width: 100%;
+	float: left;
+	text-align: left;
+}
+.rm-newmessage{
+	margin-top: 30px;
+}
+.msgbox{
+	width: 100%;
+	float: left;
+}
+.msgpic{
+	margin:0;
+	padding:0;
+	width: 30px;
+}
+.rm-messages{
+	text-align: left;
+	float: left;
+}
+#msg-pic{
+	width: 20%;
+	float: left;
+	margin-bottom: 10PX;
+}
+#msg-{
+	width: 70%;
+	float: right;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
