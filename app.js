@@ -59,9 +59,9 @@ var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 require('./socket/socket.js')(io, rooms);
 
-app.get('/translate/:lan',function(req,response){
-  translate("Ik spreek Engels", {to: req.params.lan}).then(res => {
-    response.send(res.text);
+app.post('/translate/:lan',function(req,response){
+  translate(req.body.data, {to: req.params.lan}).then(res => {
+    res.render('room',)
   //=> I speak English 
   console.log(res.from.language.iso);
   //=> nl 
