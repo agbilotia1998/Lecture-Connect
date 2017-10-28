@@ -1,0 +1,3456 @@
+{
+  "updatedAt": 1460770996023,
+  "tlds": [
+    {
+      "amount": 1110,
+      "fee": 898,
+      "private": false,
+      "enabled": true,
+      "tld": "com"
+    },
+    {
+      "amount": 1299,
+      "fee": 1082,
+      "private": false,
+      "enabled": true,
+      "tld": "net"
+    },
+    {
+      "amount": 1254,
+      "fee": 1038,
+      "private": false,
+      "enabled": true,
+      "tld": "org"
+    },
+    {
+      "amount": 1111,
+      "fee": 899,
+      "private": false,
+      "enabled": true,
+      "tld": "me"
+    },
+    {
+      "amount": 1163,
+      "fee": 950,
+      "private": false,
+      "enabled": true,
+      "tld": "us"
+    },
+    {
+      "amount": 2238,
+      "fee": 1995,
+      "private": false,
+      "enabled": true,
+      "tld": "asia"
+    },
+    {
+      "amount": 1986,
+      "fee": 1750,
+      "private": false,
+      "enabled": true,
+      "tld": "mobi"
+    },
+    {
+      "amount": 1257,
+      "fee": 1041,
+      "private": false,
+      "enabled": true,
+      "tld": "info"
+    },
+    {
+      "amount": 1274,
+      "fee": 1058,
+      "private": false,
+      "enabled": true,
+      "tld": "biz"
+    },
+    {
+      "amount": 932,
+      "fee": 725,
+      "private": false,
+      "enabled": true,
+      "tld": "co.uk"
+    },
+    {
+      "amount": 932,
+      "fee": 725,
+      "private": false,
+      "enabled": true,
+      "tld": "org.uk"
+    },
+    {
+      "amount": 932,
+      "fee": 725,
+      "private": false,
+      "enabled": true,
+      "tld": "me.uk"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "cc"
+    },
+    {
+      "amount": 932,
+      "fee": 725,
+      "private": false,
+      "enabled": true,
+      "tld": "uk"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "supplies"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "supply"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "support"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "surf"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "surgery"
+    },
+    {
+      "amount": 4919,
+      "fee": 4600,
+      "private": false,
+      "enabled": true,
+      "tld": "sydney"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "systems"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "tattoo"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "tax"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "taxi"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "team"
+    },
+    {
+      "amount": 4301,
+      "fee": 4000,
+      "private": false,
+      "enabled": true,
+      "tld": "tech"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "technology"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "tennis"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "theater"
+    },
+    {
+      "amount": 61925,
+      "fee": 60000,
+      "private": false,
+      "enabled": true,
+      "tld": "theatre"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "tienda"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "tips"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "tires"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "today"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "tokyo"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "tools"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "tours"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "town"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "toys"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "trade"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "training"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "university"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "uno"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "vacations"
+    },
+    {
+      "amount": 4919,
+      "fee": 4600,
+      "private": false,
+      "enabled": true,
+      "tld": "vegas"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "ventures"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "vet"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "viajes"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "video"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "villas"
+    },
+    {
+      "amount": 4199,
+      "fee": 3900,
+      "private": false,
+      "enabled": true,
+      "tld": "vin"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "vision"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "vodka"
+    },
+    {
+      "amount": 6051,
+      "fee": 5700,
+      "private": false,
+      "enabled": true,
+      "tld": "vote"
+    },
+    {
+      "amount": 5536,
+      "fee": 5200,
+      "private": false,
+      "enabled": true,
+      "tld": "voting"
+    },
+    {
+      "amount": 6051,
+      "fee": 5700,
+      "private": false,
+      "enabled": true,
+      "tld": "voto"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "voyage"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "wales"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "watch"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "webcam"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "website"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "wedding"
+    },
+    {
+      "amount": 3272,
+      "fee": 3000,
+      "private": false,
+      "enabled": true,
+      "tld": "wiki"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "win"
+    },
+    {
+      "amount": 4199,
+      "fee": 3900,
+      "private": false,
+      "enabled": true,
+      "tld": "wine"
+    },
+    {
+      "amount": 700,
+      "fee": 500,
+      "private": false,
+      "enabled": true,
+      "tld": "work"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "works"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "world"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "wtf"
+    },
+    {
+      "amount": 3170,
+      "fee": 2900,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--3ds443g"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--6frz82g"
+    },
+    {
+      "amount": 8417,
+      "fee": 8000,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--80asehdb"
+    },
+    {
+      "amount": 8417,
+      "fee": 8000,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--80aswg"
+    },
+    {
+      "amount": 1171,
+      "fee": 958,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--c1avg"
+    },
+    {
+      "amount": 3170,
+      "fee": 2900,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--fiq228c5hs"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--ngbc5azd"
+    },
+    {
+      "amount": 1171,
+      "fee": 958,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--nqv7f"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--q9jyb4c"
+    },
+    {
+      "amount": 1214,
+      "fee": 1000,
+      "private": false,
+      "enabled": true,
+      "tld": "xn--tckwe"
+    },
+    {
+      "amount": 1112,
+      "fee": 900,
+      "private": false,
+      "enabled": true,
+      "tld": "xyz"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "yoga"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "yokohama"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "zone"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "co.com"
+    },
+    {
+      "amount": 1626,
+      "fee": 1400,
+      "private": false,
+      "enabled": true,
+      "tld": "ninja"
+    },
+    {
+      "amount": 17164,
+      "fee": 16500,
+      "private": false,
+      "enabled": true,
+      "tld": "abogado"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "academy"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "accountant"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "accountants"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "actor"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "adult"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "agency"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "airforce"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "apartments"
+    },
+    {
+      "amount": 7491,
+      "fee": 7100,
+      "private": false,
+      "enabled": true,
+      "tld": "archi"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "army"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "associates"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "attorney"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "auction"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "audio"
+    },
+    {
+      "amount": 247145,
+      "fee": 240000,
+      "private": false,
+      "enabled": true,
+      "tld": "auto"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "band"
+    },
+    {
+      "amount": 6051,
+      "fee": 5700,
+      "private": false,
+      "enabled": true,
+      "tld": "bar"
+    },
+    {
+      "amount": 6359,
+      "fee": 6000,
+      "private": false,
+      "enabled": true,
+      "tld": "barcelona"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "bargains"
+    },
+    {
+      "amount": 3787,
+      "fee": 3500,
+      "private": false,
+      "enabled": true,
+      "tld": "bayern"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "beer"
+    },
+    {
+      "amount": 4404,
+      "fee": 4100,
+      "private": false,
+      "enabled": true,
+      "tld": "berlin"
+    },
+    {
+      "amount": 7903,
+      "fee": 7500,
+      "private": false,
+      "enabled": true,
+      "tld": "best"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "bet"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "bid"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "bike"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "bingo"
+    },
+    {
+      "amount": 6051,
+      "fee": 5700,
+      "private": false,
+      "enabled": true,
+      "tld": "bio"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "black"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "blackfriday"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "blue"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "boutique"
+    },
+    {
+      "amount": 5845,
+      "fee": 5500,
+      "private": false,
+      "enabled": true,
+      "tld": "build"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "builders"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "business"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "buzz"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cab"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cafe"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "camera"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "camp"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "capital"
+    },
+    {
+      "amount": 247145,
+      "fee": 240000,
+      "private": false,
+      "enabled": true,
+      "tld": "car"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cards"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "care"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "careers"
+    },
+    {
+      "amount": 247145,
+      "fee": 240000,
+      "private": false,
+      "enabled": true,
+      "tld": "cars"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "casa"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cash"
+    },
+    {
+      "amount": 11813,
+      "fee": 11300,
+      "private": false,
+      "enabled": true,
+      "tld": "casino"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "catering"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "center"
+    },
+    {
+      "amount": 7903,
+      "fee": 7500,
+      "private": false,
+      "enabled": true,
+      "tld": "ceo"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "chat"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cheap"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "christmas"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "church"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "city"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "claims"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cleaning"
+    },
+    {
+      "amount": 906,
+      "fee": 700,
+      "private": false,
+      "enabled": true,
+      "tld": "click"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "clinic"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "clothing"
+    },
+    {
+      "amount": 2038,
+      "fee": 1800,
+      "private": false,
+      "enabled": true,
+      "tld": "cloud"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "club"
+    },
+    {
+      "amount": 3993,
+      "fee": 3700,
+      "private": false,
+      "enabled": true,
+      "tld": "coach"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "codes"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "coffee"
+    },
+    {
+      "amount": 5536,
+      "fee": 5200,
+      "private": false,
+      "enabled": true,
+      "tld": "college"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "community"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "company"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "computer"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "condos"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "construction"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "consulting"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "contractors"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cooking"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "cool"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "country"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "coupons"
+    },
+    {
+      "amount": 3272,
+      "fee": 3000,
+      "private": false,
+      "enabled": true,
+      "tld": "courses"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "credit"
+    },
+    {
+      "amount": 11813,
+      "fee": 11300,
+      "private": false,
+      "enabled": true,
+      "tld": "creditcard"
+    },
+    {
+      "amount": 6051,
+      "fee": 5700,
+      "private": false,
+      "enabled": true,
+      "tld": "cricket"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "cruises"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "cymru"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "dance"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "date"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "dating"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "deals"
+    },
+    {
+      "amount": 3684,
+      "fee": 3400,
+      "private": false,
+      "enabled": true,
+      "tld": "degree"
+    },
+    {
+      "amount": 3993,
+      "fee": 3700,
+      "private": false,
+      "enabled": true,
+      "tld": "delivery"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "democrat"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "dental"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "dentist"
+    },
+    {
+      "amount": 1626,
+      "fee": 1400,
+      "private": false,
+      "enabled": true,
+      "tld": "desi"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "design"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "diamonds"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "diet"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "digital"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "direct"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "directory"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "discount"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "dog"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "domains"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "download"
+    },
+    {
+      "amount": 2038,
+      "fee": 1800,
+      "private": false,
+      "enabled": true,
+      "tld": "earth"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "education"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "email"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "energy"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "engineer"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "engineering"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "enterprises"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "equipment"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "estate"
+    },
+    {
+      "amount": 6874,
+      "fee": 6500,
+      "private": false,
+      "enabled": true,
+      "tld": "eus"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "events"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "exchange"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "expert"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "exposed"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "express"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "fail"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "faith"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "family"
+    },
+    {
+      "amount": 6359,
+      "fee": 6000,
+      "private": false,
+      "enabled": true,
+      "tld": "fans"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "farm"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "fashion"
+    },
+    {
+      "amount": 7697,
+      "fee": 7300,
+      "private": false,
+      "enabled": true,
+      "tld": "film"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "finance"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "financial"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "fish"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "fishing"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "fit"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "fitness"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "flights"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "florist"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "flowers"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "football"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "forsale"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "foundation"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "fund"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "furniture"
+    },
+    {
+      "amount": 1112,
+      "fee": 900,
+      "private": false,
+      "enabled": true,
+      "tld": "futbol"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "fyi"
+    },
+    {
+      "amount": 6874,
+      "fee": 6500,
+      "private": false,
+      "enabled": true,
+      "tld": "gal"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "gallery"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "garden"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "gift"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "gifts"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "gives"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "glass"
+    },
+    {
+      "amount": 6051,
+      "fee": 5700,
+      "private": false,
+      "enabled": true,
+      "tld": "global"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "gold"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "golf"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "graphics"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "gratis"
+    },
+    {
+      "amount": 6051,
+      "fee": 5700,
+      "private": false,
+      "enabled": true,
+      "tld": "green"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "gripe"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "guide"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "guitars"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "guru"
+    },
+    {
+      "amount": 4404,
+      "fee": 4100,
+      "private": false,
+      "enabled": true,
+      "tld": "hamburg"
+    },
+    {
+      "amount": 2964,
+      "fee": 2700,
+      "private": false,
+      "enabled": true,
+      "tld": "haus"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "healthcare"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "help"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "hiphop"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "hockey"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "holdings"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "holiday"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "horse"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "host"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "hosting"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "house"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "how"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "immo"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "immobilien"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "industries"
+    },
+    {
+      "amount": 3272,
+      "fee": 3000,
+      "private": false,
+      "enabled": true,
+      "tld": "ink"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "institute"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "insure"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "international"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "investments"
+    },
+    {
+      "amount": 3272,
+      "fee": 3000,
+      "private": false,
+      "enabled": true,
+      "tld": "irish"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "jetzt"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "jewelry"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "juegos"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "kaufen"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "kim"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "kitchen"
+    },
+    {
+      "amount": 2861,
+      "fee": 2600,
+      "private": false,
+      "enabled": true,
+      "tld": "kiwi"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "land"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "lawyer"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "lease"
+    },
+    {
+      "amount": 3993,
+      "fee": 3700,
+      "private": false,
+      "enabled": true,
+      "tld": "legal"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "lgbt"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "life"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "lighting"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "limited"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "limo"
+    },
+    {
+      "amount": 1009,
+      "fee": 800,
+      "private": false,
+      "enabled": true,
+      "tld": "link"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "live"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "loan"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "loans"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "lol"
+    },
+    {
+      "amount": 4404,
+      "fee": 4100,
+      "private": false,
+      "enabled": true,
+      "tld": "london"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "love"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "ltda"
+    },
+    {
+      "amount": 46490,
+      "fee": 45000,
+      "private": false,
+      "enabled": true,
+      "tld": "luxury"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "maison"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "management"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "market"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "marketing"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "mba"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "media"
+    },
+    {
+      "amount": 4919,
+      "fee": 4600,
+      "private": false,
+      "enabled": true,
+      "tld": "melbourne"
+    },
+    {
+      "amount": 3993,
+      "fee": 3700,
+      "private": false,
+      "enabled": true,
+      "tld": "memorial"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "men"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "menu"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "miami"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "moda"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "moe"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "money"
+    },
+    {
+      "amount": 3684,
+      "fee": 3400,
+      "private": false,
+      "enabled": true,
+      "tld": "mortgage"
+    },
+    {
+      "amount": 23338,
+      "fee": 22500,
+      "private": false,
+      "enabled": true,
+      "tld": "movie"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "nagoya"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "navy"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "network"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "news"
+    },
+    {
+      "amount": 2038,
+      "fee": 1800,
+      "private": false,
+      "enabled": true,
+      "tld": "ngo"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "nyc"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "okinawa"
+    },
+    {
+      "amount": 1009,
+      "fee": 800,
+      "private": false,
+      "enabled": true,
+      "tld": "one"
+    },
+    {
+      "amount": 2038,
+      "fee": 1800,
+      "private": false,
+      "enabled": true,
+      "tld": "ong"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "onl"
+    },
+    {
+      "amount": 3272,
+      "fee": 3000,
+      "private": false,
+      "enabled": true,
+      "tld": "online"
+    },
+    {
+      "amount": 2758,
+      "fee": 2500,
+      "private": false,
+      "enabled": true,
+      "tld": "ooo"
+    },
+    {
+      "amount": 3272,
+      "fee": 3000,
+      "private": false,
+      "enabled": true,
+      "tld": "osaka"
+    },
+    {
+      "amount": 5330,
+      "fee": 5000,
+      "private": false,
+      "enabled": true,
+      "tld": "paris"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "partners"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "parts"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "party"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "pet"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "photo"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "photography"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "photos"
+    },
+    {
+      "amount": 7286,
+      "fee": 6900,
+      "private": false,
+      "enabled": true,
+      "tld": "physio"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "pics"
+    },
+    {
+      "amount": 1009,
+      "fee": 800,
+      "private": false,
+      "enabled": true,
+      "tld": "pictures"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "pink"
+    },
+    {
+      "amount": 3993,
+      "fee": 3700,
+      "private": false,
+      "enabled": true,
+      "tld": "pizza"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "place"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "plumbing"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "plus"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "poker"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "porn"
+    },
+    {
+      "amount": 5948,
+      "fee": 5600,
+      "private": false,
+      "enabled": true,
+      "tld": "press"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "productions"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "properties"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "property"
+    },
+    {
+      "amount": 247145,
+      "fee": 240000,
+      "private": false,
+      "enabled": true,
+      "tld": "protection"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "pub"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "qpon"
+    },
+    {
+      "amount": 3170,
+      "fee": 2900,
+      "private": false,
+      "enabled": true,
+      "tld": "quebec"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "racing"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "recipes"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "red"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "rehab"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "reise"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "reisen"
+    },
+    {
+      "amount": 5536,
+      "fee": 5200,
+      "private": false,
+      "enabled": true,
+      "tld": "rent"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "rentals"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "repair"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "report"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "republican"
+    },
+    {
+      "amount": 3067,
+      "fee": 2800,
+      "private": false,
+      "enabled": true,
+      "tld": "rest"
+    },
+    {
+      "amount": 3993,
+      "fee": 3700,
+      "private": false,
+      "enabled": true,
+      "tld": "restaurant"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "review"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "reviews"
+    },
+    {
+      "amount": 200840,
+      "fee": 195000,
+      "private": false,
+      "enabled": true,
+      "tld": "rich"
+    },
+    {
+      "amount": 1626,
+      "fee": 1400,
+      "private": false,
+      "enabled": true,
+      "tld": "rip"
+    },
+    {
+      "amount": 1112,
+      "fee": 900,
+      "private": false,
+      "enabled": true,
+      "tld": "rocks"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "rodeo"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "run"
+    },
+    {
+      "amount": 1420,
+      "fee": 1200,
+      "private": false,
+      "enabled": true,
+      "tld": "ryukyu"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "sale"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "sarl"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "school"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "schule"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "science"
+    },
+    {
+      "amount": 4816,
+      "fee": 4500,
+      "private": false,
+      "enabled": true,
+      "tld": "scot"
+    },
+    {
+      "amount": 247145,
+      "fee": 240000,
+      "private": false,
+      "enabled": true,
+      "tld": "security"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "services"
+    },
+    {
+      "amount": 7800,
+      "fee": 7400,
+      "private": false,
+      "enabled": true,
+      "tld": "sex"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "sexy"
+    },
+    {
+      "amount": 1523,
+      "fee": 1300,
+      "private": false,
+      "enabled": true,
+      "tld": "shiksha"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "shoes"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "show"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "singles"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "site"
+    },
+    {
+      "amount": 3890,
+      "fee": 3600,
+      "private": false,
+      "enabled": true,
+      "tld": "ski"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "soccer"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "social"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "software"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "solar"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "solutions"
+    },
+    {
+      "amount": 2346,
+      "fee": 2100,
+      "private": false,
+      "enabled": true,
+      "tld": "soy"
+    },
+    {
+      "amount": 1009,
+      "fee": 800,
+      "private": false,
+      "enabled": true,
+      "tld": "space"
+    },
+    {
+      "amount": 3478,
+      "fee": 3200,
+      "private": false,
+      "enabled": true,
+      "tld": "srl"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "studio"
+    },
+    {
+      "amount": 2655,
+      "fee": 2400,
+      "private": false,
+      "enabled": true,
+      "tld": "study"
+    },
+    {
+      "amount": 2552,
+      "fee": 2300,
+      "private": false,
+      "enabled": true,
+      "tld": "style"
+    },
+    {
+      "amount": 4296,
+      "fee": 3995,
+      "private": false,
+      "enabled": true,
+      "tld": "tv"
+    },
+    {
+      "amount": 3782,
+      "fee": 3495,
+      "private": false,
+      "enabled": true,
+      "tld": "com.tw"
+    },
+    {
+      "amount": 3782,
+      "fee": 3495,
+      "private": false,
+      "enabled": true,
+      "tld": "org.tw"
+    },
+    {
+      "amount": 1214,
+      "fee": 1000,
+      "private": false,
+      "enabled": true,
+      "tld": "pw"
+    },
+    {
+      "amount": 3782,
+      "fee": 3495,
+      "private": false,
+      "enabled": true,
+      "tld": "idv.tw"
+    },
+    {
+      "amount": 1209,
+      "fee": 995,
+      "private": false,
+      "enabled": true,
+      "tld": "eu"
+    },
+    {
+      "amount": 3782,
+      "fee": 3495,
+      "private": false,
+      "enabled": true,
+      "tld": "tw"
+    },
+    {
+      "amount": 1621,
+      "fee": 1395,
+      "private": false,
+      "enabled": true,
+      "tld": "ca"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "cn"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "name"
+    },
+    {
+      "amount": 6354,
+      "fee": 5995,
+      "private": false,
+      "enabled": true,
+      "tld": "ac"
+    },
+    {
+      "amount": 4250,
+      "fee": 3950,
+      "private": false,
+      "enabled": true,
+      "tld": "io"
+    },
+    {
+      "amount": 6354,
+      "fee": 5995,
+      "private": false,
+      "enabled": true,
+      "tld": "sh"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "bz"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "nu"
+    },
+    {
+      "amount": 3015,
+      "fee": 2750,
+      "private": false,
+      "enabled": true,
+      "tld": "ws"
+    },
+    {
+      "amount": 10373,
+      "fee": 9900,
+      "private": false,
+      "enabled": true,
+      "tld": "tm"
+    },
+    {
+      "amount": 3786,
+      "fee": 3499,
+      "private": false,
+      "enabled": true,
+      "tld": "co.nz"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "com.cn"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "net.cn"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "org.cn"
+    },
+    {
+      "amount": 698,
+      "fee": 498,
+      "private": false,
+      "enabled": true,
+      "tld": "de"
+    },
+    {
+      "amount": 8417,
+      "fee": 8000,
+      "private": false,
+      "enabled": true,
+      "tld": "tc"
+    },
+    {
+      "amount": 5845,
+      "fee": 5500,
+      "private": false,
+      "enabled": true,
+      "tld": "vg"
+    },
+    {
+      "amount": 2238,
+      "fee": 1995,
+      "private": false,
+      "enabled": true,
+      "tld": "be"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "us.com"
+    },
+    {
+      "amount": 2753,
+      "fee": 2495,
+      "private": false,
+      "enabled": true,
+      "tld": "eu.com"
+    },
+    {
+      "amount": 5845,
+      "fee": 5500,
+      "private": false,
+      "enabled": true,
+      "tld": "ms"
+    },
+    {
+      "amount": 5845,
+      "fee": 5500,
+      "private": false,
+      "enabled": true,
+      "tld": "gs"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "br.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "cn.com"
+    },
+    {
+      "amount": 10470,
+      "fee": 9995,
+      "private": false,
+      "enabled": true,
+      "tld": "cm"
+    },
+    {
+      "amount": 8932,
+      "fee": 8500,
+      "private": false,
+      "enabled": true,
+      "tld": "jp"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "de.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "hu.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "no.com"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "law.pro"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "net.nz"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "med.pro"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "qc.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "se.com"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "cpa.pro"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "org.nz"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "se.net"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "sa.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "ru.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "uk.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "uk.net"
+    },
+    {
+      "amount": 7286,
+      "fee": 6900,
+      "private": false,
+      "enabled": true,
+      "tld": "com.mx"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "uy.com"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "za.com"
+    },
+    {
+      "amount": 1935,
+      "fee": 1700,
+      "private": false,
+      "enabled": true,
+      "tld": "in"
+    },
+    {
+      "amount": 10470,
+      "fee": 9995,
+      "private": false,
+      "enabled": true,
+      "tld": "am"
+    },
+    {
+      "amount": 698,
+      "fee": 498,
+      "private": false,
+      "enabled": true,
+      "tld": "nl"
+    },
+    {
+      "amount": 7898,
+      "fee": 7495,
+      "private": false,
+      "enabled": true,
+      "tld": "at"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "la"
+    },
+    {
+      "amount": 3267,
+      "fee": 2995,
+      "private": false,
+      "enabled": true,
+      "tld": "it"
+    },
+    {
+      "amount": 2238,
+      "fee": 1995,
+      "private": false,
+      "enabled": true,
+      "tld": "pro"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "aaa.pro"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "aca.pro"
+    },
+    {
+      "amount": 10470,
+      "fee": 9995,
+      "private": false,
+      "enabled": true,
+      "tld": "fm"
+    },
+    {
+      "amount": 1209,
+      "fee": 995,
+      "private": false,
+      "enabled": true,
+      "tld": "tel"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "acct.pro"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "eng.pro"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "avocat.pro"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "bar.pro"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "jur.pro"
+    },
+    {
+      "amount": 15518,
+      "fee": 14900,
+      "private": false,
+      "enabled": true,
+      "tld": "recht.pro"
+    },
+    {
+      "amount": 5328,
+      "fee": 4998,
+      "private": false,
+      "enabled": true,
+      "tld": "xxx"
+    },
+    {
+      "amount": 5022,
+      "fee": 4700,
+      "private": false,
+      "enabled": true,
+      "tld": "pe"
+    },
+    {
+      "amount": 5022,
+      "fee": 4700,
+      "private": false,
+      "enabled": true,
+      "tld": "com.pe"
+    },
+    {
+      "amount": 5022,
+      "fee": 4700,
+      "private": false,
+      "enabled": true,
+      "tld": "net.pe"
+    },
+    {
+      "amount": 5022,
+      "fee": 4700,
+      "private": false,
+      "enabled": true,
+      "tld": "org.pe"
+    },
+    {
+      "amount": 5022,
+      "fee": 4700,
+      "private": false,
+      "enabled": true,
+      "tld": "nom.pe"
+    },
+    {
+      "amount": 1060,
+      "fee": 850,
+      "private": false,
+      "enabled": true,
+      "tld": "es"
+    },
+    {
+      "amount": 695,
+      "fee": 495,
+      "private": false,
+      "enabled": true,
+      "tld": "com.es"
+    },
+    {
+      "amount": 695,
+      "fee": 495,
+      "private": false,
+      "enabled": true,
+      "tld": "nom.es"
+    },
+    {
+      "amount": 695,
+      "fee": 495,
+      "private": false,
+      "enabled": true,
+      "tld": "org.es"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "com.au"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "net.au"
+    },
+    {
+      "amount": 1369,
+      "fee": 1150,
+      "private": false,
+      "enabled": true,
+      "tld": "org.au"
+    },
+    {
+      "amount": 3478,
+      "fee": 3200,
+      "private": false,
+      "enabled": true,
+      "tld": "sg"
+    },
+    {
+      "amount": 3478,
+      "fee": 3200,
+      "private": false,
+      "enabled": true,
+      "tld": "com.sg"
+    },
+    {
+      "amount": 1575,
+      "fee": 1350,
+      "private": false,
+      "enabled": true,
+      "tld": "ch"
+    },
+    {
+      "amount": 1575,
+      "fee": 1350,
+      "private": false,
+      "enabled": true,
+      "tld": "li"
+    },
+    {
+      "amount": 1163,
+      "fee": 950,
+      "private": false,
+      "enabled": true,
+      "tld": "fr"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "ar.com"
+    },
+    {
+      "amount": 1213,
+      "fee": 999,
+      "private": false,
+      "enabled": true,
+      "tld": "co"
+    },
+    {
+      "amount": 5325,
+      "fee": 4995,
+      "private": false,
+      "enabled": true,
+      "tld": "jpn.com"
+    },
+    {
+      "amount": 25910,
+      "fee": 25000,
+      "private": false,
+      "enabled": true,
+      "tld": "sucks"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "com.co"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "nom.co"
+    },
+    {
+      "amount": 1729,
+      "fee": 1500,
+      "private": false,
+      "enabled": true,
+      "tld": "net.co"
+    },
+    {
+      "amount": 2243,
+      "fee": 2000,
+      "private": false,
+      "enabled": true,
+      "tld": "gr.com"
+    },
+    {
+      "amount": 2243,
+      "fee": 2000,
+      "private": false,
+      "enabled": true,
+      "tld": "us.org"
+    },
+    {
+      "amount": 1214,
+      "fee": 1000,
+      "private": false,
+      "enabled": true,
+      "tld": "com.de"
+    },
+    {
+      "amount": 0,
+      "fee": 0,
+      "private": true,
+      "enabled": true,
+      "tld": "daplie.me"
+    }
+  ]
+}

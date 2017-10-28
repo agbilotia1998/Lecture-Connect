@@ -10,6 +10,7 @@
     "ejs": "^2.5.6",
     "express": "^4.15.3",
     "express-session": "^1.15.3",
+    "google-translate-api": "^2.3.0",
     "hogan-express": "^0.5.2",
     "https-proxy-agent": "^2.1.0",
     "jquery": "^3.2.1",
@@ -17,11 +18,13 @@
     "passport": "^0.3.2",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",
+    "serve-https": "^2.2.1",
     "socket.io": "^0.9.19"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "author": "sid",
   "license": "ISC"

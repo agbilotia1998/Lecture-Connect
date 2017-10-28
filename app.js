@@ -12,6 +12,8 @@ var express = require('express'),
 	rooms = [],
 	todocontroller = require('./controller/controller.js')
 
+const translate = require('google-translate-api');
+	
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('hogan-express'));
 app.set('view engine', 'ejs');
@@ -67,6 +69,18 @@ app.set('port', process.env.PORT || 9000);
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 require('./socket/socket.js')(io, rooms);
+
+app.get('/translate/:lan',function(req,response){
+  translate(req.body.data, {to: req.params.lan}).then(res => {
+    response.send(res.text);
+  //=> I speak English 
+  console.log(res.from.language.iso);
+  //=> nl 
+}).catch(err => {
+    console.error(err);
+});
+});
+
 server.listen(app.get('port'), function() {
 	console.log('ChatBox is working on ' + app.get('port')); 
-})
+});
