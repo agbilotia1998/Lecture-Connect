@@ -60,7 +60,7 @@ var io = require('socket.io').listen(server);
 require('./socket/socket.js')(io, rooms);
 
 app.get('/translate/:lan',function(req,response){
-  translate(req.body.data, {to: req.params.lan}).then(res => {
+  translate("Ik spreek Engels", {to: req.params.lan}).then(res => {
     response.send(res.text);
   //=> I speak English 
   console.log(res.from.language.iso);
