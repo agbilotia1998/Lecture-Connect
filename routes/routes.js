@@ -19,7 +19,13 @@ module.exports = function(express, app, passport, config, rooms){
 		successRedirect:'/user',
 		failureRedirect:'/'
 	}))
-
+	
+  router.get('/auth/google', passport.authenticate('google',{scope : ['profile', 'email']}));
+  router.get('/auth/google/callback', passport.authenticate('google', {
+    successRedirect:'/user',
+    failureRedirect:'/'
+  }))
+	
 	router.get('/user',securePages ,function(req, res, next) {
 		res.render('user', {title:'Dashboard', user:req.user,config:config});
 	})

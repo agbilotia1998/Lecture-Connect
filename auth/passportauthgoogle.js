@@ -1,27 +1,9 @@
-module.exports =  function(passport, FBStrategy, config, mongoose) {
-	
-	var user = new mongoose.Schema({
-		profileID:String,
-		fullname:String,
-		profilePic:String
-	})
-
-	var userModel = mongoose.model('user', user);
-
-	passport.serializeUser(function(user, done){
-		done(null, user.id);
-	});
-
-	passport.deserializeUser(function(id, done) {
-		userModel.findById(id, function(err, user) {
-			done(err, user);
-		})
-	});
+module.exports =  function(passport, GoogleStrategy, config, mongoose,userModel) {
   
-  FBStrategy = new FBStrategy({
-    clientID:config.fb.appID,
-    clientSecret:config.fb.appSecret,
-    callbackURL:config.fb.callbackURL,
+  GoogleStrategy = new GoogleStrategy({
+    clientID:config.googleAuth.clientID,
+    clientSecret:config.googleAuth.clientSecret,
+    callbackURL:config.googleAuth.callbackURL,
     profileFields:['id', 'displayName','photos']
   }, function(accessToken, refreshToken, profile, done) {
     
@@ -39,13 +21,13 @@ module.exports =  function(passport, FBStrategy, config, mongoose) {
         })
       }
     })
-  })
-	
+  });
+  
   var HttpsProxyAgent = require('https-proxy-agent');
   if (process.env['https_proxy']) {
     var httpsProxyAgent = new HttpsProxyAgent(process.env['https_proxy']);
-    FBStrategy._oauth2.setAgent(httpsProxyAgent);
+    GoogleStrategy._oauth2.setAgent(httpsProxyAgent);
   }
-
-	passport.use(FBStrategy);
-}
+  
+  passport.use(GoogleStrategy);
+};

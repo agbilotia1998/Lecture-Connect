@@ -7,7 +7,8 @@ var express = require('express'),
 	connectMongo = require('connect-mongo')(session),
 	mongoose = require('mongoose').connect(config.dbURL),
 	passport = require('passport'),
-	FBStrategy = require('passport-facebook').Strategy, 
+	FBStrategy = require('passport-facebook').Strategy,
+	GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 	rooms = [],
 	todocontroller = require('./controller/controller.js')
 
@@ -36,7 +37,26 @@ if (env === 'development') {
 app.use(passport.initialize());
 app.use(passport.session());
 
-require('./auth/passportauth.js')(passport, FBStrategy, config, mongoose);
+var user = new mongoose.Schema({
+  profileID:String,
+  fullname:String,
+  profilePic:String
+})
+
+var userModel = mongoose.model('user', user);
+
+passport.serializeUser(function(user, done){
+  done(null, user.id);
+});
+
+passport.deserializeUser(function(id, done) {
+  userModel.findById(id, function(err, user) {
+    done(err, user);
+  })
+});
+
+require('./auth/passportauthfb.js')(passport, FBStrategy, config, mongoose,userModel);
+require('./auth/passportauthgoogle.js')(passport, GoogleStrategy, config, mongoose,userModel);
 require('./routes/routes.js')(express, app, passport, config, rooms);
 /*
 app.listen(9000, function() {
