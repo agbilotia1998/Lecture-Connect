@@ -36,7 +36,7 @@ module.exports = function(express, app, passport, config, rooms){
 
 //Logout and Gethelp Page
 	router.get('/user/gethelp',securePages ,function(req, res, next) {
-		res.render('gethelp', {title:'Get Help', user:req.user,config:config});
+		res.render('gethelp', {title:'Get Help', user:req.user,config:config,a:0});
 	});
 
 	router.get('/user/gethelp/room/:id', securePages , function(req, res, next) {
