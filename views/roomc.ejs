@@ -12,56 +12,41 @@
       // anon function in this ($) context
       $(function(){
 
-        messages.on('connect', function(){
-          console.log('Connection to ' + userName + ' Established !!');
-          messages.emit('joinroom', {
-            room:roomNum,
-            user:userName,
-            userPic:userPic
-          });
-        });
+//        messages.on('connect', function(){
+//          console.log('Connection to ' + userName + ' Established !!');
+//          messages.emit('joinroom', {
+//            room:roomNum,
+//            user:userName,
+//            userPic:userPic
+//          });
+//        });
 
-        $(document).on('keyup', '.newmessage', function(e){
-          if(e.which === 13 && $(this).val()!=''){
-            messages.emit('newMessage', {
-              room_number:roomNum,
-              user:userName,
-              userPic:userPic,
-              message:$(this).val()
-            })
-            updateMessageFeed(userPic, $(this).val());
-            $(this).val('');
-          }
-        })
+
 
         messages.on('messagefeed', function(data){
           var msgs = JSON.parse(data);
-          updateMessageFeed(msgs.userPic, msgs.message);
+          updateMessageFeed(msgs);
         })
 
-        function updateMessageFeed(userPic, message){
-          var str = '<li>';
-          str += '<div class="msgbox">';
-          str +=	'<div><img id="msg-pic" class="msgpic" src="' + userPic + '"></div>';
-          str +=	'<div><p id="msg-" class="msg">' + message + '</p></div>';
-          str +=	'</div>';
-          str += '</li>';
-          $(str).hide().prependTo($('.messages')).slideDown(100);
+        function updateMessageFeed(message) {
+          $('#msg').text(message);
         }
 
-        messages.on('updateUsersList', function(data){
-          var userlist = JSON.parse(data);
-          $('.users').html('');
-          for(var n = 0; n < userlist.length; n++){
-            var str = '<li><img class="pic" src="' + userlist[n].userPic + '"><h5>' + userlist[n].user + '</h5></li>';
-            $(str).prependTo($('.users'));
-          }
         })
 
-        setInterval(function(){
-          messages.emit('updateList', {room:roomNum});
-        }, 15 * 1000);
-      })
+//        messages.on('updateUsersList', function(data){
+//          var userlist = JSON.parse(data);
+//          $('.users').html('');
+//          for(var n = 0; n < userlist.length; n++){
+//            var str = '<li><img class="pic" src="' + userlist[n].userPic + '"><h5>' + userlist[n].user + '</h5></li>';
+//            $(str).prependTo($('.users'));
+//          }
+//        })
+//
+//        setInterval(function(){
+//          messages.emit('updateList', {room:roomNum});
+//        }, 15 * 1000);
+//      })
     </script>
 </head>
 <body>
@@ -79,14 +64,14 @@
         <div id="second">
             <div class="rm-messages">
                 <ul class="messages">
+                    <li>
+                        <div class="msgbox">
+                            <div><p id="msg"></p></div>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
-        </div>
-        <div>
-            <center>
-                <%= reqtext%>
-            </center>
         </div>
         <div id="third">
             <div class="active-users">

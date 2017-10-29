@@ -65,7 +65,7 @@ require('./socket/socket.js')(io, rooms);
 
 app.get('/translate/:lan',function(req,response) {
   translate(req.query.data, {to: req.params.lan}).then(res => {
-    response.render('roomc', {reqtext:res.text});
+    response.send(res.text);
     //=> I speak English
     console.log(res.from.language.iso);
     //=> nl

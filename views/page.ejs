@@ -28,6 +28,7 @@
             profile: 'UA-26908291-1'
         });
     </script>
+
     <style>
         #info {
             font-size: 20px;
@@ -514,13 +515,56 @@
             }
             var str = document.getElementById('final_span').innerHTML;
             console.log(document.getElementById('final_span').innerHTML);
-            axios.get('https://iiita-lectures.herokuapp.com/translate/ja?data=' + str).then(() => {
-              console.log('badiya');
+            axios.get('https://iiita-lectures.herokuapp.com/translate/'+localStorage.getItem("sourceLang")+'?data=' + str).then((response) => {
+              console.log(response);
+              if(response.data !==''){
+                messages.emit('newMessage', {
+                  room_number:localStorage.getItem("Room"),
+                  message:response.data
+                })
+              }
+
             }).catch(() => {
               console.log('tel lagao');
             })
         }, 5000);
     </script>
+    <!--/*<script>-->
+      <!--// anon function in this ($) context-->
+      <!--$(function(){-->
+        <!--$(document).on('ready', '.newmessage', function(e){-->
+          <!---->
+        <!--})-->
+    <!---->
+        <!--messages.on('messagefeed', function(data){-->
+          <!--var msgs = JSON.parse(data);-->
+          <!--updateMessageFeed(msgs.userPic, msgs.message);-->
+        <!--})-->
+    <!---->
+        <!--function updateMessageFeed(userPic, message){-->
+          <!--var str = '<li>';-->
+          <!--str += '<div class="msgbox">';-->
+          <!--str +=	'<div><img id="msg-pic" class="msgpic" src="' + userPic + '"></div>';-->
+          <!--str +=	'<div><p id="msg-" class="msg">' + message + '</p></div>';-->
+          <!--str +=	'</div>';-->
+          <!--str += '</li>';-->
+          <!--$(str).hide().prependTo($('.messages')).slideDown(100);-->
+        <!--}-->
+    <!---->
+        <!--messages.on('updateUsersList', function(data){-->
+          <!--var userlist = JSON.parse(data);-->
+          <!--$('.users').html('');-->
+          <!--for(var n = 0; n < userlist.length; n++){-->
+            <!--var str = '<li><img class="pic" src="' + userlist[n].userPic + '"><h5>' + userlist[n].user + '</h5></li>';-->
+            <!--$(str).prependTo($('.users'));-->
+          <!--}-->
+        <!--})-->
+    <!---->
+        <!--setInterval(function(){-->
+          <!--messages.emit('updateList', {room:roomNum});-->
+        <!--}, 15 * 1000);-->
+      <!--})-->
+    <!--</script>-->
 </body>
 
 </html>
