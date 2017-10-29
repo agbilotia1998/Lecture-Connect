@@ -39,8 +39,8 @@
 			}
 		})
 
-		messages.on('messagefeed', function(reqtran){
-			var msgs = JSON.parse(reqtran);
+		messages.on('messagefeed', function(data){
+			var msgs = JSON.parse(data);
 			updateMessageFeed(msgs.userPic, msgs.message);
 		})
 

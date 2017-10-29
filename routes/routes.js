@@ -41,17 +41,7 @@ module.exports = function(express, app, passport, config, rooms){
 
 	router.get('/user/gethelp/room/:id', securePages , function(req, res, next) {
 		var room_name = findTitle(req.params.id);
-    translate(req.body.data, { to: req.params.lan })
-      .then(res => {
-        response.send(res.text);
-        //=> I speak English
-        console.log(res.from.language.iso);
-        //=> nl
-      })
-      .catch(err => {
-        console.error(err);
-      });
-		res.render('room', { reqtran: res.text ,user:req.user, room_number:req.params.id, config:config, room_name:room_name})
+		res.render('room', {user:req.user, room_number:req.params.id, config:config, room_name:room_name})
 	});
 
 	router.get("/reqtran", securePages, function(req, res, next) {
