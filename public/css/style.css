@@ -1,184 +1,62 @@
-#main{
-	margin: 3% 3% 3% 3%;
-}
-body{
-	background-color:#DADADA;
-	font-family:futura ;
-	color: #474747;
-	margin:0;
-	padding: 0;
-	border:0;
-}
-a:link{
-	text-decoration: none;
-	border:none;
-	color:#DADADA;
-}
-a:visited{
-	color:#DADADA;
-	text-decoration: none;
-	border:none;
-}
-a:hover{
-	color:#DADADA;
-	text-decoration: none;
-	border:none;
-}
-a:acive{
-	color: #DADADA;
-	text-decoration: none;
-	border:none;
+﻿  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .pad-top {
+    padding-top:50px;
+  }
+  .pad-top-bottom {
+   padding-top:20px;
+   padding-bottom:30px;
+ }
+ .text-center {
+  text-align:center;
 }
 
-h1,h2,h3,h4,h5,h6{
-	margin: 0;
-	padding:0;
+section {
+  padding:40px 0px 40px 0px;
 }
-ul{
-	list-style-type: none;
-	
+p {
+  line-height:30px;
+  font-size:16px;
+  padding:10px 0px 10px 0px;
 }
-button{
-	display: block;
-	background-color: #707070;
-	border: none;
-	color: #DADADA;
-	box-shadow: 0px 10px 50px 0px #404040;
-	font-family: futura;
-	width: 100%;
-	padding: 7% 7% 6% 7%;
-	font-size: 20px;
+h1 {
+  font-weight: 900;
+  color:rgb(255, 15, 101);
 }
-button:hover{
-	font-size:25px;
-	border:none
+#home-sec {
+  background: url(../img/home.jpg) no-repeat center center;
+  padding: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  color:#fff;
 }
-
-input[type="text"]{
-	height: 40px;
-	background-color:#DADADA;
-	border-color: #474747;
-	font-size: 20px;
-	padding: 0 0 0 5px;
-	width: 100%;
-	margin:0% 0% 3% 0%;
+#home-sec .overlay {
+  padding-top:45px;
+  background:rgba(0, 0, 0, 0.80);
+  min-height:790px;
 }
-.title{
-	font-size: 45px;
-	text-align: center;
-	width: 100%;
-	background-color:#404040;
-	color:white;
-	padding:2% 0% 2% 0%;	
+#home-sec .main-img {
+ max-height:200px;
+ border:5px solid rgb(255, 15, 101);
+ cursor:pointer;
 }
 
-#navigation{
-	float: left;
-	width: 20%;
-	height: 100%;
+#home-sec a,#home a:hover {
+  text-decoration:none;
 }
 
-.userPic{
-	width:100%; 
-	text-align: center;
-	box-shadow: 0px 5px 30px  #909090;
-}
-.userName{
-	width:100%;
-	font-size: 120%;
-	text-align:center;
-	padding:2% 2% 2% 0%;
-	margin-bottom: 5%;
-	margin-top: 5%;	
+#home-sec h1 {
+  font-weight: 900;
+  padding: 20px 0px 0px 0px;
 }
 
-.pic{
-	width: 30%;
-	height:30%;
-	box-shadow: 0px 5px 30px  #909090;
-}
-#platform{
-	float: right;
-	width: 75%;
+.card {
+  background-color: transparent;
 }
 
-#entry{
-	float: left;
-	width: 75%;
-	height: 5%;
-}
-#enter{
-	float: right;
-	width: 20%;
-	height: 
-}
-a:link.issuename{
-	color: #474747;
-}
-a:hover.issuename{
-	color: #474747;
-}
-a:active.issuename{
-	color: #474747;
-} 
-a:visited.issuename{
-	color: #474747;
-}
-#cr-roomlist{
-	width: 100%;
-	float: left;
-}
-.issue{
-	text-align: left;
-	font-size: 30px;
-}
-.msgbox{
-	
-}
-
-#login{
-	
-}
-#third{
-	width: 25%;
-	float: right;
-}
-#second{
-	float: left;
-	width: 70%;
-}
-.newmessage{
-	width: 100%;
-}
-#listitems{
-	width: 100%;
-	float: left;
-	text-align: left;
-}
-.rm-newmessage{
-	margin-top: 30px;
-}
-.msgbox{
-	width: 100%;
-	float: left;
-}
-.msgpic{
-	margin:0;
-	padding:0;
-	width: 30px;
-}
-.rm-messages{
-	text-align: left;
-	float: left;
-}
-#msg-pic{
-	width: 20%;
-	float: left;
-	margin-bottom: 10PX;
-}
-#msg-{
-	width: 70%;
-	float: right;
-	padding: 0;
-	margin: 0 0 10px 0;
+.card-body img {
+   width: 74px;
 }

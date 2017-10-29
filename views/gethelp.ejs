@@ -1,73 +1,164 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><%- title %></title>
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<title>My Account</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="/socket.io/socket.io.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<script>
-		$(function() { 
+		$(function () {
 			var host = '<%- config.host %>';
 			var socket = io.connect(host + '/roomlist');
-			socket.on('connect', function(){
+			socket.on('connect', function () {
 				console.log('Connection Established!');
 			})
-			socket.on('roomupdate', function(data){
+			socket.on('roomupdate', function (data) {
 				var procData = JSON.parse(data);
 				$('.roomlist').html('');
 				for (var i = 0; i < procData.length; i++) {
-                  var str = '<div><a class="issuename" href="gethelp/room/' + procData[i].room_number + '"><li>' + procData[i].room_name + '</li></a></div>';
-                  $('.roomlist').prepend(str);
-                }
+					var str = '<div><a class="issuename" href="gethelp/room/' + procData[i].room_number + '"><li>' + procData[i].room_name + '</li></a></div>';
+					$('.roomlist').prepend(str);
+				}
 			})
-			$(document).on('click', '#create', function() {
+			$(document).on('click', '#create', function () {
 				var room_name = $('.newRoom').val();
-				if(room_name != ''){
+				if (room_name != '') {
 					var room_number = parseInt(Math.random() * 10000);
-					socket.emit('newroom', {room_name:room_name, room_number:room_number});
+					socket.emit('newroom', { room_name: room_name, room_number: room_number });
 					$('.newRoom').val('');
-                  localStorage.setItem("Room",room_number);
+					localStorage.setItem("Room", room_number);
 				}
 			})
 		})
 	</script>
 </head>
-<body>
-		<h2 class="title">Steno</h2>
- <div id="main">
-		<div id="navigation">
-			<img src="<%- user.profilePic %>" class="userPic">
-			<h3 class="userName"><%- user.fullname %></h3>
-			<a href="/user"><button class="nav">Home</button></a>
-			<a href="/user/todo"><button class="nav">Your to-do list</button></a>
-			<a href="/user/gethelp"><button class="nav">Get Help</button></a>
-			<a href="/logout"><button class="nav">Logout</button></a>			
-		</div>
-		<div style="top:1%; position: absolute; left: 10px;"><a href=""><i class="fa fa-github" style="font-size: 3em;"></i></a></div>
-		<div style="position: absolute; top: 2%; right: 10px;"><a href="">Give your Suggestions</a></div>
 
-	<div id="platform">
-		<p>
-			In order to get help in any topic/issue. Type in the issue, it will be broadcasted to all the users on the website.<br>PS: Feature of bradcasting in particular group/circles will be added soon.
-		</p>
-			<div class="newroom" >
-				<div id="entry">
-					<input type="text" class="newRoom" autocomplete="off" placeholder="Enter your issue here.">
-				</div>
-				<div id="enter">
-					<button id="create">Get Help</button>
+<body>
+	<div class="back"></div>
+	<div class="registration-form">
+		<header>
+			<h1>Create a Chatroom</h1>
+			<p>Fill in all informations</p>
+		</header>
+		<form>
+			<div class="input-section class-section">
+				<input class="class" type="class" placeholder="ENTER YOUR CLASS NAME HERE" autocomplete="off" />
+				<div class="animated-button">
+					<span class="icon-paper-plane">
+						<i class="fa fa-list-alt"></i>
+					</span>
+					<span class="next-button class">
+						<i class="fa fa-arrow-up"></i>
+					</span>
 				</div>
 			</div>
-		<p>
-			<div id="cr-roomlist">
-				<ul class="roomlist">
-				</ul>
-	 		</div>
-		</p>
+			<div class="input-section duration-section folded">
+				<input class="duration" type="duration" placeholder="ENTER THE CLASS DURATION HERE" />
+				<div class="animated-button">
+					<span class="icon-lock">
+						<i class="fa fa-clock-o"></i>
+					</span>
+					<span class="next-button duration">
+						<i class="fa fa-arrow-up"></i>
+					</span>
+				</div>
+			</div>
+			<div class="input-section source-lang-section folded">
+				<!-- <input class="source-lang" type="source-lang" name="lang" placeholder="ENTER THE SOURCE LANGUAGE" /> -->
+				<select id="select_language" style="width: 320px">
+					<option value="af-ZA">Afrikaans</option>
+					<option value="am-ET">አማርኛ</option>
+					<option value="az-AZ">Azərbaycanca</option>
+					<option value="bn-BD">বাংলা</option>
+					<option value="id-ID">Bahasa Indonesia</option>
+					<option value="ms-MY">Bahasa Melayu</option>
+					<option value="ca-ES">Català</option>
+					<option value="cs-CZ">Čeština</option>
+					<option value="da-DK">Dansk</option>
+					<option value="de-DE">Deutsch</option>
+					<option value="en-US">English</option>
+					<option value="es-ES">Español</option>
+					<option value="eu-ES">Euskara</option>
+					<option value="fil-PH">Filipino</option>
+					<option value="fr-FR">Français</option>
+					<option value="jv-ID">Basa Jawa</option>
+					<option value="gl-ES">Galego</option>
+					<option value="gu-IN">ગુજરાતી</option>
+					<option value="hr-HR">Hrvatski</option>
+					<option value="zu-ZA">IsiZulu</option>
+					<option value="is-IS">Íslenska</option>
+					<option value="it-IT">Italiano</option>
+					<option value="kn-IN">ಕನ್ನಡ</option>
+					<option value="km-KH">ភាសាខ្មែរ</option>
+					<option value="lv-LV">Latviešu</option>
+					<option value="lt-LT">Lietuvių</option>
+					<option value="ml-IN">മലയാളം</option>
+					<option value="mr-IN">मराठी</option>
+					<option value="hu-HU">Magyar</option>
+					<option value="lo-LA">ລາວ</option>
+					<option value="nl-NL">Nederlands</option>
+					<option value="ne-NP">नेपाली भाषा</option>
+					<option value="nb-NO">Norsk bokmål</option>
+					<option value="pl-PL">Polski</option>
+					<option value="pt-PT">Português</option>
+					<option value="ro-RO">Română</option>
+					<option value="si-LK">සිංහල</option>
+					<option value="sl-SI">Slovenščina</option>
+					<option value="su-ID">Basa Sunda</option>
+					<option value="sk-SK">Slovenčina</option>
+					<option value="fi-FI">Suomi</option>
+					<option value="sv-SE">Svenska</option>
+					<option value="sw-KE">Kiswahili</option>
+					<option value="ka-GE">ქართული</option>
+					<option value="hy-AM">Հայերեն</option>
+					<option value="ta-LK">தமிழ்</option>
+					<option value="te-IN">తెలుగు</option>
+					<option value="vi-VN">Tiếng Việt</option>
+					<option value="tr-TR">Türkçe</option>
+					<option value="ur-PK">اُردُو</option>
+					<option value="el-GR">Ελληνικά</option>
+					<option value="bg-BG">български</option>
+					<option value="ru-RU">Pусский</option>
+					<option value="sr-RS">Српски</option>
+					<option value="uk-UA">Українська</option>
+					<option value="ko-KR">한국어</option>
+					<option value="cmn-Hans-CN">中文</option>
+					<option value="ja-JP">日本語</option>
+					<option value="hi-IN">हिन्दी</option>
+					<option value="th-TH">ภาษาไทย</option>
+				</select>
+				<div class="animated-button" onclick="updateCountry()">
+					<span class="icon-repeat-lock">
+						<i class="fa fa-language"></i>
+					</span>
+					<span class="next-button source-lang">
+						<i class="fa fa-paper-plane"></i>
+					</span>
+				</div>
+			</div>
+			<div class="success">
+				<p>ACCOUNT CREATED</p>
+			</div>
+						<div class="newroom">
+							<div id="entry">
+								<input type="text" class="newRoom" autocomplete="off" placeholder="Enter your issue here.">
+							</div>
+							<div id="enter">
+								<button id="create">Get Help</button>
+							</div>
+						</div>
+						<p>
+							<div id="cr-roomlist">
+								<ul class="roomlist">
+								</ul>
+							</div>
+						</p>
+		</form>
 	</div>
-</div>
+	<script type="text/javascript" src="jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
