@@ -74,6 +74,10 @@ app.get('/translate/:lan',function(req,response) {
   });
 });
 
+app.get('/chatRoom',function(req,res){
+	res.render("page");
+});
+
 
 server.listen(app.get('port'), function() {
 	console.log('ChatBox is working on ' + app.get('port')); 

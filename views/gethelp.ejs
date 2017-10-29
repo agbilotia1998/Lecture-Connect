@@ -161,16 +161,13 @@
 			<div class="success">
 				<p>ACCOUNT CREATED</p>
 			</div>
-<<<<<<< HEAD
 
 						<div class="newroom">
 							<div id="enter">
 								<button id="create">Get Help</button>
 							</div>
 						</div>
-=======
->>>>>>> af5967e64dd43ba9610617c7015bc552123b468e
-						<p>
+		<p>
 							<div id="cr-roomlist">
 								<ul class="roomlist">
 								</ul>
@@ -179,14 +176,14 @@
 		</form>
 	</div>
 	<script language="javascript">
-		localStorage.setItem("sourceLang", JSON.stringify("af-ZA"));
+		localStorage.setItem("sourceLang","af-ZA");
 		function updateCountry() {
 			var lang = $("#select_language").val();
 			var res = lang.slice(0, 2);
-			localStorage.setItem("sourceLang", JSON.stringify(res));
+			localStorage.setItem("sourceLang", res);
 			var carriage = prompt("You want to confirm your selection (y/n)");
 			if (carriage === 'y' || carriage === 'Y' || carriage === 'Yes' || carriage === 'YES' || carriage === 'yes') {
-				
+				window.location.href="https://iiita-lectures.herokuapp.com/chatRoom"
 			}
 		}
 	</script>
