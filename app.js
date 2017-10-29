@@ -8,9 +8,10 @@ var express = require('express'),
 	mongoose = require('mongoose').connect(config.dbURL),
 	passport = require('passport'),
 	FBStrategy = require('passport-facebook').Strategy,
-	GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
+	GoogleStrategy = require('passport-google-oauth').OAuth2Strategy,
 	rooms = [],
-	todocontroller = require('./controller/controller.js')
+	todocontroller = require('./controller/controller.js'),
+  bodyParser = require('body-parser');
 
 const translate = require('google-translate-api');
 	
@@ -19,6 +20,8 @@ app.engine('html', require('hogan-express'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(session({secret:'I am lulululu', resave:true, saveUninitialized:true}));
 
 
@@ -60,8 +63,8 @@ var io = require('socket.io').listen(server);
 require('./socket/socket.js')(io, rooms);
 
 
-app.get('/translate/:lan/:data',function(req,response) {
-  translate(req.params.data, {to: req.params.lan}).then(res => {
+app.post('/translate/:lan',function(req,response) {
+  translate(req.body.data, {to: req.params.lan}).then(res => {
     response.render('roomc', {reqtext:res.text});
     //=> I speak English
     console.log(res.from.language.iso);
