@@ -205,6 +205,7 @@
 
         doubleTracker.trackClass('doubletrack', true);
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         var langs =
             [['Afrikaans', ['af-ZA']],
@@ -505,6 +506,16 @@
             copy_info.style.display = 'none';
             email_info.style.display = 'none';
         }
+
+        setInterval(function() {
+            axios.post('http://localhost:9000/translate/' + localStorage.getItem('sourceLang'), {
+              data: document.getElementById('final_span').value()
+            }).then(() => {
+              console.log('badiya');
+            }).catch(() => {
+              console.log('tel lagao');
+            })
+        }, 5000);
     </script>
 </body>
 
