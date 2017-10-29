@@ -80,7 +80,7 @@ app.get('/chatRoom',function(req,res){
 
 var a = 0;
 app.get('/profs',function(req,res){
-	res.render("gethelp",{a:1})
+	res.render("gethelp",{a:1,title:'Get Help', user:req.user,config:config});
 });
 
 
