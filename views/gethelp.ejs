@@ -3,7 +3,7 @@
 <head>
 	<title>My Account</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="/style.css">-->
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
@@ -35,7 +35,7 @@
 	</script>
 </head>
 
-<body>
+<form>
 	<div class="back"></div>
 	<div class="registration-form">
 		<header>
@@ -67,7 +67,7 @@
 			</div>
 			<div class="input-section source-lang-section folded">
 				<!-- <input class="source-lang" type="source-lang" name="lang" placeholder="ENTER THE SOURCE LANGUAGE" /> -->
-				<select id="select_language" style="width: 320px" onupdate="updateCountry()">
+				<select id="select_language" style="width: 320px" onchange="updateCountry()">
 					<option value="af-ZA">Afrikaans</option>
 					<option value="am-ET">አማርኛ</option>
 					<option value="az-AZ">Azərbaycanca</option>
@@ -130,32 +130,36 @@
 					<option value="th-TH">ภาษาไทย</option>
 				</select>
 
-				<div class="newroom">
-					<div id="enter">
-						<button id="create">Submit</button>
-					</div>
-				</div>
 
-				<div class="animated-button">
-					<div class="newroom">
-						<div id="enter">
-							<button id="lecture">Go to LectureRoom</button>
-						</div>
-					</div>
-				</div>
+
+
 					<p><br><br><br><br><br><br>
 					</p>
 
-					<span class="icon-repeat-lock">
-						<i class="fa fa-language"></i>
-					</span>
-					<span class="next-button source-lang">
-						<i class="fa fa-paper-plane"></i>
-					</span>
+					<!--<span class="icon-repeat-lock">-->
+						<!--<i class="fa fa-language"></i>-->
+					<!--</span>-->
+					<!--<span class="next-button source-lang">-->
+						<!--<i class="fa fa-paper-plane"></i>-->
+					<!--</span>-->
 				</div>
+		</form>
 			</div>
 
+	<div class="newroom">
+		<div id="enter">
+			<button id="create">Submit</button>
+		</div>
+	</div>
+	</div>
 
+
+	<div class="animated-button">
+		<div class="newroom">
+			<div id="hoho">
+				<button id="lecture">Go to LectureRoom</button>
+			</div>
+		</div>
 	</div>
 
 	<div id="cr-roomlist">
@@ -170,6 +174,9 @@
 			localStorage.setItem("sourceLang", res);
 		}
 		$('#lecture').click(function () {
+          var lang = $("#select_language").val();
+          var res = lang.slice(0, 2);
+          localStorage.setItem("sourceLang", res);
 		  window.location.href = "https://iiita-lectures.herokuapp.com/reqtran";
         })
 	</script>
