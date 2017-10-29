@@ -12,14 +12,12 @@
       // anon function in this ($) context
       $(function(){
 
-//        messages.on('connect', function(){
-//          console.log('Connection to ' + userName + ' Established !!');
-//          messages.emit('joinroom', {
-//            room:roomNum,
-//            user:userName,
-//            userPic:userPic
-//          });
-//        });
+        messages.on('connect', function(){
+          console.log('Connection to  Established !!');
+          messages.emit('joinroom', {
+            room:localStorage.getItem("Room")
+          });
+        });
 
 
 
@@ -29,6 +27,7 @@
         })
 
         function updateMessageFeed(message) {
+          console.log(message);
           $('#msg').text(message);
         }
 
