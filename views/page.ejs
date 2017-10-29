@@ -509,7 +509,7 @@
         }
 
         setInterval(function() {
-            axios.post('http://localhost:9000/translate/ja', {
+            axios.post('https://iiita-lectures.herokuapp.com/translate/ja', {
               data: document.getElementById('final_span').value
             }).then(() => {
               console.log('badiya');
