@@ -78,6 +78,11 @@ app.get('/chatRoom',function(req,res){
 	res.render("page");
 });
 
+var a = 0;
+app.get('/profs',function(req,res){
+	res.render("gethelp",{a:1})
+});
+
 
 server.listen(app.get('port'), function() {
 	console.log('ChatBox is working on ' + app.get('port')); 
