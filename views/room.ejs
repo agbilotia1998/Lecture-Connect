@@ -29,17 +29,12 @@
 
 		messages.on('messagefeed', function(data){
 			var msgs = JSON.parse(data);
-			updateMessageFeed(msgs);
+			updateMessageFeed(msgs.message);
 		})
 
 		function updateMessageFeed(data){
 		  console.log(data);
-			var str = '<li>';
-				str += '<div class="msgbox">';
-				str +=	'<div><p id="msg-" class="msg">' + data + '</p></div>';
-				str +=	'</div>';
-				str += '</li>';
-			$(str).hide().prependTo($('.messages')).slideDown(100);
+		  $('#Recieved').text(data);
 		}
 
 	})
@@ -66,7 +61,8 @@
 					<ul class="messages">
 					</ul>
 			</div>
-
+<div id="Recieved">
+</div>
 		</div>
 		<div id="third">
 			<div class="active-users">
