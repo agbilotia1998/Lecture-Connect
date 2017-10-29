@@ -131,6 +131,11 @@
 					<option value="th-TH">ภาษาไทย</option>
 				</select>
 				<div class="animated-button" onclick="updateCountry()">
+				<div class="newroom">
+					<div id="enter">
+						<button id="create">Submit</button>
+					</div>
+				</div>
 					<span class="icon-repeat-lock">
 						<i class="fa fa-language"></i>
 					</span>
@@ -142,11 +147,6 @@
 			<div class="success">
 				<p>ACCOUNT CREATED</p>
 			</div>
-						<div class="newroom">
-							<div id="enter">
-								<button id="create">Get Help</button>
-							</div>
-						</div>
 						<p>
 							<div id="cr-roomlist">
 								<ul class="roomlist">
@@ -155,6 +155,18 @@
 						</p>
 		</form>
 	</div>
+	<script language="javascript">
+		localStorage.setItem("sourceLang", JSON.stringify("af-ZA"));
+		function updateCountry() {
+			var lang = $("#select_language").val();
+			var res = lang.slice(0, 2);
+			localStorage.setItem("sourceLang", JSON.stringify(res));
+			var carriage = prompt("You want to confirm your selection (y/n)");
+			if (carriage === 'y' || carriage === 'Y' || carriage === 'Yes' || carriage === 'YES' || carriage === 'yes') {
+				
+			}
+		}
+	</script>
 	<script type="text/javascript" src="/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="/script.js"></script>
 </body>
