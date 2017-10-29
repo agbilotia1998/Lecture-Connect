@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title><%- title %></title>
 
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -36,20 +36,27 @@
 	</script>
 </head>
 <body>
-	<h2 class="title">Steno</h2>
+	<div class="logo"></div>
+
+	<h2 class="title">LECTURE CONNECT</h2>
+
  <div id="main">
+ 	<br>
 		<div id="navigation">
-			<img src="<%- user.profilePic %>" class="userPic">
+
+			<img src="../css/wl.svg" class="userPic">
 			<h3 class="userName"><%- user.fullname %></h3>
 			<a href="/user"><button class="nav">Home</button></a>
-			<a href="/user/todo"><button class="nav">Your to-do list</button></a>
-			<a href="/user/gethelp"><button class="nav">Get Help</button></a>
+			<a href="/user/gethelp"><button class="nav">Lecture Room</button></a>
 			<a href="/logout"><button class="nav">Logout</button></a>			
 		</div>
+		<br>
+		<br>
+		<br>
 		
 	<div id="platform">
 		<p>
-			Hello <%- user.fullname %>, Welcome to Steno. You can create your todo list which will be saved until you delete it. Moreover you can ask for help from the people who use the website by clicking the "Get Help". <br> Feel free to add suggestions for the web app.
+			Hello <%- user.fullname %>, Welcome to Lecture Connect.
 		</p>
 	</div>
 

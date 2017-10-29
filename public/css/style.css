@@ -1,5 +1,29 @@
 ﻿  body {
     font-family: 'Open Sans', sans-serif;
+    background-image: url("userback.png");
+      background-size: 100% 768px;
+    background-repeat: no-repeat;
+  }
+
+    h2.title{
+    color:white;
+    float: left;
+    margin-left: 40%;
+  }
+
+  .userName{
+    color:white;
+
+  }
+
+  .platform{
+    color:white;
+  }
+
+
+  
+  .userPic{
+    background-color: white;
   }
 
   .pad-top {
@@ -16,11 +40,14 @@
 section {
   padding:40px 0px 40px 0px;
 }
+
 p {
   line-height:30px;
   font-size:16px;
   padding:10px 0px 10px 0px;
+  color:white;
 }
+
 h1 {
   font-weight: 900;
   color:rgb(255, 15, 101);
@@ -60,3 +87,20 @@ h1 {
 .card-body img {
    width: 74px;
 }
+
+button.nav{
+  height:40px;
+  width:60px;
+  float: left;
+  margin-left: 40px;
+}
+
+.logo{
+  background-image:url("wl.svg");
+  height:50px;
+  width:50px;
+  background-size: 100% 100%;
+  float: left;
+
+}
+
