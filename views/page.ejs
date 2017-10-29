@@ -8,6 +8,7 @@
     <script src="./prof-chatroom_files/cb=gapi.loaded_0" async=""></script>
     <script type="text/javascript" async="" src="./prof-chatroom_files/plusone.js.download" gapi_processed="true"></script>
     <script type="text/javascript" async="" src="./prof-chatroom_files/ga.js.download"></script>
+    <script src="../socket.io/socket.io.js"></script>
     <script>
         (function (e, p) {
             var m = location.href.match(/platform=(win8|win|mac|linux|cros)/);
@@ -610,6 +611,7 @@
                 axios.get('https://iiita-lectures.herokuapp.com/translate/' + localStorage.getItem("sourceLang") + '?data=' + str).then((response) => {
                     console.log(response);
                     if (response.data !== '') {
+                      var messages = io.connect('https://iiita-lectures.herokuapp.com/messages');
                         messages.emit('newMessage', {
                             room_number: localStorage.getItem("Room"),
                             message: response.data
@@ -620,6 +622,8 @@
                     console.log('tel lagao');
                 })
             }, 5000);
+
+
         </script>
 </body>
 

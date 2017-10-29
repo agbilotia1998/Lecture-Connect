@@ -3,7 +3,7 @@
 <head>
 	<title>My Account</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="/style.css">-->
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
@@ -35,7 +35,8 @@
 	</script>
 </head>
 
-<body>
+<% if(a==1){%>
+<form>
 	<div class="back"></div>
 	<div class="registration-form">
 		<header>
@@ -67,7 +68,7 @@
 			</div>
 			<div class="input-section source-lang-section folded">
 				<!-- <input class="source-lang" type="source-lang" name="lang" placeholder="ENTER THE SOURCE LANGUAGE" /> -->
-				<select id="select_language" style="width: 320px">
+				<select id="select_language" style="width: 320px" onchange="updateCountry()">
 					<option value="af-ZA">Afrikaans</option>
 					<option value="am-ET">አማርኛ</option>
 					<option value="az-AZ">Azərbaycanca</option>
@@ -129,49 +130,61 @@
 					<option value="hi-IN">हिन्दी</option>
 					<option value="th-TH">ภาษาไทย</option>
 				</select>
-				<div class="animated-button" onclick="updateCountry()">
-					<div class="newroom">
-						<div id="enter">
-							<button id="create">Submit</button>
-						</div>
-					</div>
-				</div>
+
+
+
+
 					<p><br><br><br><br><br><br>
-					<div id="cr-roomlist">
-						<ul class="roomlist">
-						</ul>
-					</div>
 					</p>
-				<div class="newroom">
-					<div id="enter">
-						<button id="create">Submit</button>
-					</div>
+
+					<!--<span class="icon-repeat-lock">-->
+						<!--<i class="fa fa-language"></i>-->
+					<!--</span>-->
+					<!--<span class="next-button source-lang">-->
+						<!--<i class="fa fa-paper-plane"></i>-->
+					<!--</span>-->
 				</div>
-					<span class="icon-repeat-lock">
-						<i class="fa fa-language"></i>
-					</span>
-					<span class="next-button source-lang">
-						<i class="fa fa-paper-plane"></i>
-					</span>
-				</div>
+		</form>
+        <% } %>
 			</div>
 
-			<div id="cr-roomlist">
-				<ul class="roomlist">
-				</ul>
+	<% if(a==1){ %>
+	<div class="newroom">
+		<div id="enter">
+			<button id="create">Submit</button>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="animated-button">
+		<div class="newroom">
+			<div id="hoho">
+				<button id="lecture">Go to LectureRoom</button>
 			</div>
+		</div>
+	</div>
+
+	<%}%>
+
+	<h1>LECTURE ROOMS</h1>
+	<div id="cr-roomlist">
+		<ul class="roomlist">
+		</ul>
 	</div>
 	<script language="javascript">
-		localStorage.setItem("sourceLang","af-ZA");
+		localStorage.setItem("sourceLang","en");
 		function updateCountry() {
 			var lang = $("#select_language").val();
 			var res = lang.slice(0, 2);
 			localStorage.setItem("sourceLang", res);
-			var carriage = prompt("You want to confirm your selection (y/n)");
-			if (carriage === 'y' || carriage === 'Y' || carriage === 'Yes' || carriage === 'YES' || carriage === 'yes') {
-				window.location.href="https://iiita-lectures.herokuapp.com/chatRoom"
-			}
 		}
+		$('#lecture').click(function () {
+          var lang = $("#select_language").val();
+          var res = lang.slice(0, 2);
+          localStorage.setItem("sourceLang", res);
+		  window.location.href = "https://iiita-lectures.herokuapp.com/reqtran";
+        })
 	</script>
 	<script type="text/javascript" src="/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="/script.js"></script>
