@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <![endif]-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
 	<title>Lecture Connect</title>
 	<!-- BOOTSTRAP CORE STYLE CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- FONT AWESOME CSS -->
 	<link href="css/font-awesome.min.css" rel="stylesheet" />
 	<!-- ANIMATE  CSS -->
@@ -22,86 +20,81 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 
 </head>
-
 <body>
 
-	<div id="home-sec">
-		<div class="overlay">
-			<div class="card text-center">
-				<div class="card-body">
-					<img src="img/White-Logo.svg">
-					<h1 class="card-title">Lecture Connect</h1>
-					<h4 class="card-text">Platform for students to get their lectures translated to their preferred language in realtime</h4>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row pad-top-bottom  move-me">
-					<div class="col-lg-5 col-md-5 col-sm-5 text-center">
-						<img src="img/student-2.png" class="main-img img-circle wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s"
-						 alt="" />
-						<form>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Password</label>
-								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-							</div>
-							<button type="submit" class="btn btn-primary">Submit</button>
-						</form>
-					</div>
-					<div class="col-lg-2 col-md-2 col-sm-2 text-center  ">
-
-					</div>
-					<div class="col-lg-5 col-md-5 col-sm-5 text-center">
-						<img src="img/profesor_1.png" class="main-img img-circle wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s"
-						 alt="" />
-						<form>
-							<div class="form-group">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="EmailProf" name="EmailProf" aria-describedby="emailHelp" placeholder="Enter email">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Password</label>
-								<input type="password" class="form-control" id="PasswordProf" name="PasswordProf" placeholder="Password">
-							</div>
-							<button type="submit" class="btn btn-primary" onclick="check(this.form)">Submit</button>
-						</form>
-					</div>
-				</div>
-
+<div id="home-sec">
+	<div class="overlay">
+		<div class="card text-center">
+			<div class="card-body">
+				<img src="img/White-Logo.svg" >
+				<h1 class="card-title">Lecture Connect</h1>
+				<h4 class="card-text">Platform for students to get their lectures translated to their preferred language in realtime</h4>
 			</div>
 		</div>
+		<div class="container">
+			<div class="row pad-top-bottom  move-me">
+				<div class="col-lg-5 col-md-5 col-sm-5 text-center">
+					<img src="img/student-2.png" class="main-img img-circle wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s" alt=""/>
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<button type="submit" class="btn btn-primary btn-medium" style="margin-top: -14px">Submit</button>
+						<a href="/auth/facebook"><i class="fa fa-facebook-square fa-3x fa-fw" aria-hidden="true"></i></a>
+						<a href="/auth/google"><i class="fa fa-google-plus-square fa-3x fa-fw" aria-hidden="true"></i></a>
+					</form>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 text-center  ">
+
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 text-center">
+					<img src="img/profesor_1.png" class="main-img img-circle wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s" alt=""/>
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="EmailProf" name="EmailProf" aria-describedby="emailHelp" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="PasswordProf" name="PasswordProf" placeholder="Password">
+						</div>
+						<button type="submit" class="btn btn-primary" onclick="check(this.form)">Submit</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
 	</div>
-	<!-- HOME SECTION END-->
-	<script language="javascript">
-		function check(form) {
-			if (form.EmailProf.value == "professor" && form.PasswordProf.value == "mypass") {
-				window.open('../prof-chatroom/prof-chat.html')
-			}
-			else {
-				alert("Error Password or Username")
-			}
-		}
-	</script>
-	<!--  JQUERY CORE SCRIPTS -->
-	<script src="js/jquery-1.10.2.js"></script>
-	<!--  BOOTSTRAP SCRIPTS -->
-	<script src="js/bootstrap.js"></script>
-	<!--  SCROLL SCRIPTS -->
-	<script src="js/jquery.easing.min.js"></script>
-	<!--  WOW ANIMATION SCRIPTS -->
-	<script src="js/wow.min.js"></script>
-	<!--  CUSTOM SCRIPTS -->
-	<script src="js/custom.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-	 crossorigin="anonymous"></script>
+</div>
+<!-- HOME SECTION END-->
+<script language="javascript">
+  function check(form) {
+    if(form.EmailProf.value == "professor" && form.PasswordProf.value == "mypass") {
+      window.open('../prof-chatroom/prof-chat.html')
+    }
+    else {
+      alert("Error Password or Username")
+    }
+  }
+</script>
+<!--  JQUERY CORE SCRIPTS -->
+<script src="js/jquery-1.10.2.js"></script>
+<!--  BOOTSTRAP SCRIPTS -->
+<script src="js/bootstrap.js"></script>
+<!--  SCROLL SCRIPTS -->
+<script src="js/jquery.easing.min.js"></script>
+<!--  WOW ANIMATION SCRIPTS -->
+<script src="js/wow.min.js"></script>
+<!--  CUSTOM SCRIPTS -->
+<script src="js/custom.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

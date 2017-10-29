@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>My Account</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 	<script src="/socket.io/socket.io.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<script>
@@ -130,6 +129,20 @@
 					<option value="th-TH">ภาษาไทย</option>
 				</select>
 				<div class="animated-button" onclick="updateCountry()">
+					<div class="newroom">
+						<div id="entry">
+							<input type="text" class="newRoom" autocomplete="off" placeholder="Enter your issue here.">
+						</div>
+						<div id="enter">
+							<button id="create">Get Help</button>
+						</div>
+					</div>
+					<p>
+					<div id="cr-roomlist">
+						<ul class="roomlist">
+						</ul>
+					</div>
+					</p>
 					<span class="icon-repeat-lock">
 						<i class="fa fa-language"></i>
 					</span>
@@ -141,24 +154,11 @@
 			<div class="success">
 				<p>ACCOUNT CREATED</p>
 			</div>
-						<div class="newroom">
-							<div id="entry">
-								<input type="text" class="newRoom" autocomplete="off" placeholder="Enter your issue here.">
-							</div>
-							<div id="enter">
-								<button id="create">Get Help</button>
-							</div>
-						</div>
-						<p>
-							<div id="cr-roomlist">
-								<ul class="roomlist">
-								</ul>
-							</div>
-						</p>
+
 		</form>
 	</div>
-	<script type="text/javascript" src="jquery-1.10.2.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="/script.js"></script>
 </body>
 
 </html>
