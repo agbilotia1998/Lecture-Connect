@@ -3,96 +3,67 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Forum: <%- room_number %></title>
-	<link rel="stylesheet" href="../../../css/style.css">
+
+	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
 	<script>
-	// anon function in this ($) context
-	$(function(){
-		var host = '<%- config.host %>';
-		var messages = io.connect(host + '/messages');
-		var roomNum = <%- room_number %>;
-		var userName = '<%-user.fullname%>';
-		var userPic = '<%-user.profilePic%>';
+      // anon function in this ($) context
+      $(function(){
 
-		messages.on('connect', function(){
-			console.log('Connection to ' + userName + ' Established !!');
-			messages.emit('joinroom', {
-				room:roomNum,
-				user:userName,
-				userPic:userPic
-			});
-		});
+//        messages.on('connect', function(){
+//          console.log('Connection to ' + userName + ' Established !!');
+//          messages.emit('joinroom', {
+//            room:roomNum,
+//            user:userName,
+//            userPic:userPic
+//          });
+//        });
 
-		$(document).on('keyup', '.newmessage', function(e){
-			if(e.which === 13 && $(this).val()!=''){
-				messages.emit('newMessage', {
-					room_number:roomNum,
-					user:userName,
-					userPic:userPic,
-					message:$(this).val()
-				})
-				updateMessageFeed(userPic, $(this).val());
-				$(this).val('');
-			}
-		})
 
-		messages.on('messagefeed', function(data){
-			var msgs = JSON.parse(data);
-			updateMessageFeed(msgs.userPic, msgs.message);
-		})
 
-		function updateMessageFeed(userPic, message){
-			var str = '<li>';
-				str += '<div class="msgbox">';
-				str +=	'<div><img id="msg-pic" class="msgpic" src="' + userPic + '"></div>';
-				str +=	'<div><p id="msg-" class="msg">' + message + '</p></div>';
-				str +=	'</div>';
-				str += '</li>';
-			$(str).hide().prependTo($('.messages')).slideDown(100);
-		}
+        messages.on('messagefeed', function(data){
+          var msgs = JSON.parse(data);
+          updateMessageFeed(msgs);
+        })
 
-		messages.on('updateUsersList', function(data){
-			var userlist = JSON.parse(data);
-			$('.users').html('');
-			for(var n = 0; n < userlist.length; n++){
-				var str = '<li><img class="pic" src="' + userlist[n].userPic + '"><h5>' + userlist[n].user + '</h5></li>';
-				$(str).prependTo($('.users'));
-			}
-		})
+        function updateMessageFeed(message) {
+          $('#msg').text(message);
+        }
 
-		setInterval(function(){
-			messages.emit('updateList', {room:roomNum});
-		}, 15 * 1000);
-	})
+      })
+
+      //        messages.on('updateUsersList', function(data){
+      //          var userlist = JSON.parse(data);
+      //          $('.users').html('');
+      //          for(var n = 0; n < userlist.length; n++){
+      //            var str = '<li><img class="pic" src="' + userlist[n].userPic + '"><h5>' + userlist[n].user + '</h5></li>';
+      //            $(str).prependTo($('.users'));
+      //          }
+      //        })
+      //
+      //        setInterval(function(){
+      //          messages.emit('updateList', {room:roomNum});
+      //        }, 15 * 1000);
+      //      })
 	</script>
 </head>
-<body>	
-	<h2 class="title">Steno</h2>
- <div id="main">
-		<div id="navigation">
-			<img src="<%- user.profilePic %>" class="userPic">
-			<h3 class="userName"><%- user.fullname %></h3>
-			<a href="/user"><button class="nav">Home</button></a>
-			<a href="/user/todo"><button class="nav">Your to-do list</button></a>
-			<a href="/user/gethelp"><button class="nav">Get Help</button></a>
-			<a href="/logout"><button class="nav">Logout</button></a>			
-		</div>
-		<div style="top:1%; position: absolute; left: 10px;"><a href=""><i class="fa fa-github" style="font-size: 3em;"></i></a></div>
-		<div style="position: absolute; top: 2%; right: 10px;"><a href="">Give your Suggestions</a></div>
+<body>
+<h2 class="title">Steno</h2>
+<div id="main">
 	<div id="platform">
 		<div id="second">
-			<h3 class="issue">Issue: <%- room_name%></h3>
-			<div class="rm-newmessage">
-				<input type="text" class="newmessage" autocomplete="off" placeholder="Type in your message and press enter!">
-			</div>
 			<div class="rm-messages">
-					<ul class="messages">
-					</ul>
+				<ul class="messages">
+					<li>
+						<div class="msgbox">
+							<div><p id="msg"></p></div>
+						</div>
+					</li>
+				</ul>
 			</div>
-			
+
 		</div>
 		<div id="third">
 			<div class="active-users">
