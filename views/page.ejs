@@ -509,9 +509,12 @@
         }
 
         setInterval(function() {
+            var config = {
+              headers: {'Content-Type': 'application/json'}
+            }
             axios.post('https://iiita-lectures.herokuapp.com/translate/ja', {
               data: document.getElementById('final_span').value
-            }).then(() => {
+            }, config).then(() => {
               console.log('badiya');
             }).catch(() => {
               console.log('tel lagao');
