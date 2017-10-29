@@ -59,16 +59,17 @@ var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 require('./socket/socket.js')(io, rooms);
 
-app.get('/translate/:lan',function(req,response){
-	translate(req.body.data, {to: req.params.lan}).then(res => {
+app.get('/translate/:lan',function(req,response) {
+  translate(req.body.data, {to: req.params.lan}).then(res => {
     res.render('room',)
-  //=> I speak English 
-  console.log(res.from.language.iso);
-  //=> nl 
-}).catch(err => {
+    //=> I speak English
+    console.log(res.from.language.iso);
+    //=> nl
+  }).catch(err => {
     console.error(err);
+  });
 });
-});
+
 
 server.listen(app.get('port'), function() {
 	console.log('ChatBox is working on ' + app.get('port')); 
