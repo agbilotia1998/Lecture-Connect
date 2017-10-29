@@ -73,16 +73,7 @@ require('./socket/socket.js')(io, rooms);
 
 
 
-app.get('/translate/:lan',function(req,response){
-  translate(req.body.data, {to: req.params.lan}).then(res => {
-    response.send(res.text);
-  //=> I speak English 
-  console.log(res.from.language.iso);
-  //=> nl 
-}).catch(err => {
-    console.error(err);
-});
-});
+
 
 server.listen(app.get('port'), function() {
 	console.log('ChatBox is working on ' + app.get('port')); 
