@@ -33,6 +33,7 @@
 		})
 
 		function updateMessageFeed(data){
+		  console.log(data);
 			var str = '<li>';
 				str += '<div class="msgbox">';
 				str +=	'<div><p id="msg-" class="msg">' + data + '</p></div>';
@@ -60,9 +61,7 @@
 	<div id="platform">
 		<div id="second">
 			<h3 class="issue">Issue: <%- room_name%></h3>
-			<div class="rm-newmessage">
-				<input type="text" class="newmessage" autocomplete="off" placeholder="Type in your message and press enter!">
-			</div>
+
 			<div class="rm-messages">
 					<ul class="messages">
 					</ul>
