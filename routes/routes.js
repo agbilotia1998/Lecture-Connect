@@ -44,7 +44,7 @@ module.exports = function(express, app, passport, config, rooms){
 		res.render('room', {user:req.user, room_number:req.params.id, config:config, room_name:room_name})
 	});
 
-	router.get("/reqtran", securePages, function(req, res, next) {
+	router.get("/reqtran",function(req, res, next) {
     res.render("page");
   });
 
