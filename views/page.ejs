@@ -509,8 +509,8 @@
         }
 
         setInterval(function() {
-            axios.post('http://localhost:9000/translate/' + localStorage.getItem('sourceLang'), {
-              data: document.getElementById('final_span').value()
+            axios.post('http://localhost:9000/translate/ja', {
+              data: document.getElementById('final_span').value
             }).then(() => {
               console.log('badiya');
             }).catch(() => {
