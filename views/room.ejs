@@ -11,7 +11,11 @@
 	<script>
       // anon function in this ($) context
       $(function(){
-
+        var host = '<%- config.host %>';
+        var messages = io.connect(host + '/roomlist');
+        messages.on('connect', function () {
+          console.log('Connection Established!');
+        })
         messages.on('connect', function(){
           console.log('Connection to  Established !!');
           messages.emit('joinroom', {
