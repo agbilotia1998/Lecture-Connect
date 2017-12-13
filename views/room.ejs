@@ -46,7 +46,7 @@
             axios.get('https://iiita-lectures.herokuapp.com/translate/' + code + '?data=' + data).then((response) => {
                 console.log(response);
                 if (response.data !== '') {
-                    $('#Recieved').text(response);
+                    $('#Recieved').text(response.data);
                 }
             })
         }
