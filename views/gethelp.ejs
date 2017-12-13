@@ -24,7 +24,8 @@
 				}
 			})
 			$(document).on('click', '#create', function () {
-                var room_name = $('.newRoom').val()+' - '+$('#select_language :selected').text()+'('+$('#select_language').val().slice(0,2)+')';
+			    //console.log($('.newRoom :checked').val());
+                var room_name = $('input[name=\'x\']:checked').val()+' - '+$('#select_language :selected').text()+'('+$('#select_language').val().slice(0,2)+')';
 				if (room_name != '') {
 					var room_number = parseInt(Math.random() * 10000);
 					socket.emit('newroom', { room_name: room_name, room_number: room_number });
@@ -47,7 +48,8 @@
 		</header>
 		<form>
 			<div class="input-section class-section entry">
-				<input class="class newRoom" type="class" placeholder="ENTER YOUR CLASS NAME HERE" autocomplete="off" />
+				<input type="radio" name="x" value="OS" class="newRoom" checked> OS
+				<input type="radio" name="x" value="TOC" class="newRoom"> TOC
 				<div class="animated-button">
 					<span class="icon-paper-plane">
 						<i class="fa fa-list-alt"></i>

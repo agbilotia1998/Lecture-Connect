@@ -14,7 +14,9 @@
 	$(function(){
         var name = '<%= room_name%>';
 		var host = '<%- config.host %>';
-		var messages = io.connect("https://iiita-lectures.herokuapp.com/messages/"+name[0]+name[1]);
+		var index = name.indexOf(' ');
+		var messages = io.connect("https://iiita-lectures.herokuapp.com/messages/"+name.substring(0,index));
+		console.log(name.substring(0,index));
 		var roomNum = '<%- room_number %>';
 		var userName = '<%-user.fullname%>';
 		var userPic = '<%-user.profilePic%>';
@@ -53,10 +55,9 @@
 	</script>
 </head>
 <body>
-	<h2 class="title">Steno</h2>
+	<h2 class="title">Lecture-Connect</h2>
  <div id="main">
 		<div id="navigation">
-			<img src="<%- user.profilePic %>" class="userPic">
 			<h3 class="userName"><%- user.fullname %></h3>
 			<a href="/user"><button class="nav">Home</button></a>
 			<a href="/user/todo"><button class="nav">Your to-do list</button></a>
