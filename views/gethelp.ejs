@@ -11,7 +11,7 @@
 		$(function () {
             var room_set =[] ;
 			var host = '<%- config.host %>';
-			var socket = io.connect(host + '/roomlist');
+			var socket = io.connect('https://iiita-lectures.herokuapp.com/roomlist');
 			socket.on('connect', function () {
 				console.log('Connection Established!');
 			})

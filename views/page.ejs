@@ -614,13 +614,14 @@
                     //if (response.data !== '') {
                 //var room_set = localStorage.getItem("room_data");
                 //room_set = JSON.parse(room_set);
-
+                //console.log('https://iiita-lectures.herokuapp.com/messages/'+'<%= course%>');
 
                 if(str != '') {
                     var messages = io.connect('https://iiita-lectures.herokuapp.com/messages/'+'<%= course%>');
-                    /*messages.on('connect',function(){
+                    messages.on('connect',function(){
+                        console.log(messages);
                        alert('connected');
-                    });*/
+                    });
                     var room_set = localStorage.getItem("room_data");
                     room_set = JSON.parse(room_set);
                     //console.log(room_set[0]);

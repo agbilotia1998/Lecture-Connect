@@ -11,5 +11,5 @@
 	"clientSecret"  : "DdSz7JNyB0C8Q7vVtZEircWk",
 	"callbackURL"   : "https://iiita-lectures.herokuapp.com/auth/google/callback"
 	},
-	"host":""
+	"host":"https://iiita-lectures.herokuapp.com"
 }
