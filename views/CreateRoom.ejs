@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Account</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="/style.css">-->
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+	<script>
+		$(function () {
+			var host = '<%- config.host %>';
+			var socket = io.connect(host + '/roomlist');
+			socket.on('connect', function () {
+				console.log('Connection Established!');
+			})
+			socket.on('roomupdate', function (data) {
+				var procData = JSON.parse(data);
+				$('.roomlist').html('');
+				for (var i = 0; i < procData.length; i++) {
+					var str = '<div><a class="issuename" href="gethelp/room/' + procData[i].room_number + '"><li>' + procData[i].room_name + '</li></a></div>';
+					$('.roomlist').prepend(str);
+				}
+			})
+			$(document).on('click', '#create', function () {
+				var room_name = $('.newRoom').val()+' - '+$('#select_language :selected').text()+'('+$('#select_language').val().slice(0,2)+')';
+				if (room_name != '') {
+					var room_number = parseInt(Math.random() * 10000);
+					socket.emit('newroom', { room_name: room_name, room_number: room_number });
+					$('.newRoom').val('');
+					localStorage.setItem("Room", room_number);
+				}
+			})
+		})
+	</script>
+</head>
+
+<% if(a==1){%>
+	<div class="back"></div>
+	<div class="registration-form">
+		<header>
+			<h1>Create a Chatroom</h1>
+			<p>Fill in all informations</p>
+		</header>
+		<form>
+			<div class="input-section class-section entry">
+				<input class="class newRoom" type="class" placeholder="ENTER YOUR CLASS NAME HERE" autocomplete="off" />
+				<div class="animated-button">
+					<span class="icon-paper-plane">
+						<i class="fa fa-list-alt"></i>
+					</span>
+					<span class="next-button class">
+						<i class="fa fa-arrow-up"></i>
+					</span>
+				</div>
+			</div>
+			<div class="input-section duration-section folded">
+				<input class="duration" type="duration" placeholder="ENTER THE CLASS DURATION HERE" />
+				<div class="animated-button">
+					<span class="icon-lock">
+						<i class="fa fa-clock-o"></i>
+					</span>
+					<span class="next-button duration">
+						<i class="fa fa-arrow-up"></i>
+					</span>
+				</div>
+			</div>
+			<div class="input-section source-lang-section folded">
+				<!-- <input class="source-lang" type="source-lang" name="lang" placeholder="ENTER THE SOURCE LANGUAGE" /> -->
+				<select id="select_language" style="width: 320px">
+					<option value="af-ZA">Afrikaans</option>
+					<option value="am-ET">አማርኛ</option>
+					<option value="az-AZ">Azərbaycanca</option>
+					<option value="bn-BD">বাংলা</option>
+					<option value="id-ID">Bahasa Indonesia</option>
+					<option value="ms-MY">Bahasa Melayu</option>
+					<option value="ca-ES">Català</option>
+					<option value="cs-CZ">Čeština</option>
+					<option value="da-DK">Dansk</option>
+					<option value="de-DE">Deutsch</option>
+					<option value="en-US">English</option>
+					<option value="es-ES">Español</option>
+					<option value="eu-ES">Euskara</option>
+					<option value="fil-PH">Filipino</option>
+					<option value="fr-FR">Français</option>
+					<option value="jv-ID">Basa Jawa</option>
+					<option value="gl-ES">Galego</option>
+					<option value="gu-IN">ગુજરાતી</option>
+					<option value="hr-HR">Hrvatski</option>
+					<option value="zu-ZA">IsiZulu</option>
+					<option value="is-IS">Íslenska</option>
+					<option value="it-IT">Italiano</option>
+					<option value="kn-IN">ಕನ್ನಡ</option>
+					<option value="km-KH">ភាសាខ្មែរ</option>
+					<option value="lv-LV">Latviešu</option>
+					<option value="lt-LT">Lietuvių</option>
+					<option value="ml-IN">മലയാളം</option>
+					<option value="mr-IN">मराठी</option>
+					<option value="hu-HU">Magyar</option>
+					<option value="lo-LA">ລາວ</option>
+					<option value="nl-NL">Nederlands</option>
+					<option value="ne-NP">नेपाली भाषा</option>
+					<option value="nb-NO">Norsk bokmål</option>
+					<option value="pl-PL">Polski</option>
+					<option value="pt-PT">Português</option>
+					<option value="ro-RO">Română</option>
+					<option value="si-LK">සිංහල</option>
+					<option value="sl-SI">Slovenščina</option>
+					<option value="su-ID">Basa Sunda</option>
+					<option value="sk-SK">Slovenčina</option>
+					<option value="fi-FI">Suomi</option>
+					<option value="sv-SE">Svenska</option>
+					<option value="sw-KE">Kiswahili</option>
+					<option value="ka-GE">ქართული</option>
+					<option value="hy-AM">Հայերեն</option>
+					<option value="ta-LK">தமிழ்</option>
+					<option value="te-IN">తెలుగు</option>
+					<option value="vi-VN">Tiếng Việt</option>
+					<option value="tr-TR">Türkçe</option>
+					<option value="ur-PK">اُردُو</option>
+					<option value="el-GR">Ελληνικά</option>
+					<option value="bg-BG">български</option>
+					<option value="ru-RU">Pусский</option>
+					<option value="sr-RS">Српски</option>
+					<option value="uk-UA">Українська</option>
+					<option value="ko-KR">한국어</option>
+					<option value="cmn-Hans-CN">中文</option>
+					<option value="ja-JP">日本語</option>
+					<option value="hi-IN">हिन्दी</option>
+					<option value="th-TH">ภาษาไทย</option>
+				</select>
+
+
+
+
+					<p><br><br><br><br><br><br>
+					</p>
+
+					<!--<span class="icon-repeat-lock">-->
+						<!--<i class="fa fa-language"></i>-->
+					<!--</span>-->
+					<!--<span class="next-button source-lang">-->
+						<!--<i class="fa fa-paper-plane"></i>-->
+					<!--</span>-->
+				</div>
+		</form>
+        <% } %>
+			</div>
+
+	<% if(a==1){ %>
+	<div class="newroom">
+		<div id="enter">
+			<button id="create">Submit</button>
+		</div>
+	</div>
+	</div>
+
+
+	<div class="animated-button">
+		<div class="newroom">
+			<div id="hoho">
+				<button id="lecture">Go to LectureRoom</button>
+			</div>
+		</div>
+	</div>
+
+	<%}%>
+
+	<h1>LECTURE ROOMS</h1>
+	<div id="cr-roomlist">
+		<ul class="roomlist">
+		</ul>
+	</div>
+	<script language="javascript">
+		localStorage.setItem("sourceLang","en");
+		function updateCountry() {
+			var lang = $("#select_language").val();
+			var res = lang.slice(0, 2);
+			localStorage.setItem("sourceLang", res);
+		}
+		$('#lecture').click(function () {
+          var lang = $("#select_language").val();
+          var res = lang.slice(0, 2);
+          localStorage.setItem("sourceLang", res);
+		  window.location.href = "https://iiita-lectures.herokuapp.com/reqtran";
+        })
+	</script>
+	<script type="text/javascript" src="/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="/script.js"></script>
+</body>
+
+</html>
