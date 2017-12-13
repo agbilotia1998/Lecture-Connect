@@ -9,6 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
 	<script>
 		$(function () {
+            var room_set =[] ;
 			var host = '<%- config.host %>';
 			var socket = io.connect(host + '/roomlist');
 			socket.on('connect', function () {
@@ -23,12 +24,15 @@
 				}
 			})
 			$(document).on('click', '#create', function () {
-				var room_name = $('.newRoom').val();
+                var room_name = $('.newRoom').val()+' - '+$('#select_language :selected').text()+'('+$('#select_language').val().slice(0,2)+')';
 				if (room_name != '') {
 					var room_number = parseInt(Math.random() * 10000);
 					socket.emit('newroom', { room_name: room_name, room_number: room_number });
 					$('.newRoom').val('');
-					localStorage.setItem("Room", room_number);
+					room_set.push(room_number);
+					console.log(room_set);
+					//localStorage.setItem("Room", room_number);
+                    localStorage.setItem("room_data",  JSON.stringify(room_set));
 				}
 			})
 		})
@@ -36,7 +40,6 @@
 </head>
 
 <% if(a==1){%>
-<form>
 	<div class="back"></div>
 	<div class="registration-form">
 		<header>

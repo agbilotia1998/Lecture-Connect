@@ -612,11 +612,25 @@
                 //axios.get('https://iiita-lectures.herokuapp.com/translate/' + x + '?data=' + str).then((response) => {
                   //  console.log(response);
                     //if (response.data !== '') {
-                      var messages = io.connect('https://iiita-lectures.herokuapp.com/messages');
+                var room_set = localStorage.getItem("room_data");
+                room_set = JSON.parse(room_set);
+
+
+                if(str!='') {
+                    var messages = io.connect('http://localhost:9000/messages/os');
+                    messages.on('connect',function(){
+                       alert('connected');
+                    });
+                    var room_set = localStorage.getItem("room_data");
+                    room_set = JSON.parse(room_set);
+                    //console.log(room_set[0]);
+                    //for (var i = 0; i < room_set.length; i++) {
                         messages.emit('newMessage', {
-                            room_number: localStorage.getItem("Room"),
+                            room_number: room_set[i],
                             message: str
                         })
+                    //}
+                }
                     //}
 
                 //}).catch(() => {

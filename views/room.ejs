@@ -12,8 +12,8 @@
 	// anon function in this ($) context
 	$(function(){
 		var host = '<%- config.host %>';
-		var messages = io.connect(host + '/messages');
-		var roomNum = <%- room_number %>;
+		var messages = io.connect("http://localhost:9000/messages/os");
+		var roomNum = '<%- room_number %>';
 		var userName = '<%-user.fullname%>';
 		var userPic = '<%-user.profilePic%>';
 
@@ -28,6 +28,7 @@
 
 
 		messages.on('messagefeed', function(data){
+		    console.log(data);
 			var msgs = JSON.parse(data);
 			updateMessageFeed(msgs.message);
 		})
