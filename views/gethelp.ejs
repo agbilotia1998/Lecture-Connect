@@ -28,7 +28,6 @@
 				if (room_name != '') {
 					var room_number = parseInt(Math.random() * 10000);
 					socket.emit('newroom', { room_name: room_name, room_number: room_number });
-					$('.newRoom').val('');
 					room_set.push(room_number);
 					console.log(room_set);
 					//localStorage.setItem("Room", room_number);
@@ -186,7 +185,7 @@
           var lang = $("#select_language").val();
           var res = lang.slice(0, 2);
           localStorage.setItem("sourceLang", res);
-		  window.location.href = "https://iiita-lectures.herokuapp.com/reqtran";
+		  window.location.href = "http://localhost:9000/reqtran/"+$('.newRoom').val();
         })
 	</script>
 	<script type="text/javascript" src="/jquery-1.10.2.js"></script>
