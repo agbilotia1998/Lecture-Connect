@@ -16,7 +16,7 @@
 		var host = '<%- config.host %>';
 		var index = name.indexOf(' ');
 		var messages = io.connect("https://iiita-lectures.herokuapp.com/messages/"+name.substring(0,index));
-		console.log(name.substring(0,index));
+		console.log(messages);
 		var roomNum = '<%- room_number %>';
 		var userName = '<%-user.fullname%>';
 		var userPic = '<%-user.profilePic%>';
