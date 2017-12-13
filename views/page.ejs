@@ -618,14 +618,17 @@
 
                 if(str != '') {
                     var messages = io.connect('https://iiita-lectures.herokuapp.com/messages/'+'<%= course%>');
+                    console.log('https://iiita-lectures.herokuapp.com/messages/'+'<%= course%>');
                     messages.on('connect',function(){
-                        console.log(messages);
+                        //console.log(messages);
                        alert('connected');
                     });
                     var room_set = localStorage.getItem("room_data");
                     room_set = JSON.parse(room_set);
                     //console.log(room_set[0]);
+                    console.log(room_set.length);
                     for (var i = 0; i < room_set.length; i++) {
+                        console.log(room_set[i]);
                         messages.emit('newMessage', {
                             room_number: room_set[i],
                             message: str
