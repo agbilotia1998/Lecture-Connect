@@ -625,12 +625,12 @@
                     var room_set = localStorage.getItem("room_data");
                     room_set = JSON.parse(room_set);
                     //console.log(room_set[0]);
-                    //for (var i = 0; i < room_set.length; i++) {
+                    for (var i = 0; i < room_set.length; i++) {
                         messages.emit('newMessage', {
                             room_number: room_set[i],
                             message: str
                         })
-                    //}
+                    }
                 }
                     //}
 

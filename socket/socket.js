@@ -51,12 +51,7 @@ module.exports = function(io, rooms){
 
     var message = io.of('/messages/TOC').on('connection', function(socket){
         console.log('Connected to the Chatroom!');
-        socket.on('joinroom', function(data){
-            socket.username = data.user;
-            socket.userPic = data.userPic;
-            socket.join(data.room); //push user into partitioned room.
-            updateUserList(data.room, true);
-        });
+
 
         socket.on('newMessage', function(data){
             socket.broadcast.to(data.room_number).emit('messagefeed', JSON.stringify(data));

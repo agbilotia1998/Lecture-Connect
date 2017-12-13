@@ -19,7 +19,7 @@
 				var procData = JSON.parse(data);
 				$('.roomlist').html('');
 				for (var i = 0; i < procData.length; i++) {
-					var str = '<div><a class="issuename" href="gethelp/room/' + procData[i].room_number + '"><li>' + procData[i].room_name + '</li></a></div>';
+					var str = '<div><a class="issuename" href="/user/gethelp/room/' + procData[i].room_number + '"><li>' + procData[i].room_name + '</li></a></div>';
 					$('.roomlist').prepend(str);
 				}
 			})
