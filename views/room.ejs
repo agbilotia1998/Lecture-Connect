@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script>
 	// anon function in this ($) context
 	$(function(){
@@ -33,10 +34,19 @@
 			updateMessageFeed(msgs.message);
 		})
 
-		function updateMessageFeed(data){
-		  console.log(data);
-		  $('#Recieved').text(data);
-		}
+		function updateMessageFeed(data) {
+            console.log(data);
+            var name = '<%= room_name%>';
+            var size = name.length;
+            var code = name[size-3]+name[size-2];
+            console.log(code);
+            axios.get('https://iiita-lectures.herokuapp.com/translate/' + code + '?data=' + data).then((response) => {
+                console.log(response);
+                if (response.data !== '') {
+                    $('#Recieved').text(response);
+                }
+            })
+        }
 
 	})
 	</script>
