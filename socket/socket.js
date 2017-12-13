@@ -49,7 +49,7 @@ module.exports = function(io, rooms){
 
   });
 
-    var message = io.of('/messages/TOC').on('connection', function(socket){
+    var messages = io.of('/messages/TOC').on('connection', function(socket){
         console.log('Connected to the Chatroom!');
 
 
