@@ -617,10 +617,10 @@
 
 
                 if(str != '') {
-                    var messages = io.connect('http://localhost:9000/messages/'+'<%= course%>');
-                    messages.on('connect',function(){
+                    var messages = io.connect('https://iiita-lectures.herokuapp.com/messages/'+'<%= course%>');
+                    /*messages.on('connect',function(){
                        alert('connected');
-                    });
+                    });*/
                     var room_set = localStorage.getItem("room_data");
                     room_set = JSON.parse(room_set);
                     //console.log(room_set[0]);

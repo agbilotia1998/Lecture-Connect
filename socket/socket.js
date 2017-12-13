@@ -13,7 +13,7 @@ module.exports = function(io, rooms){
     })
   });
 
-  var messages = io.of('/messages/os').on('connection', function(socket){
+  var messages = io.of('/messages/OS').on('connection', function(socket){
     console.log('Connected to the Chatroom!');
     socket.on('joinroom', function(data){
       socket.username = data.user;
@@ -27,7 +27,7 @@ module.exports = function(io, rooms){
     });
 
     function updateUserList(room, updateALL){
-      var getUsers = io.of('/messages/os').clients(room);
+      var getUsers = io.of('/messages/OS').clients(room);
       var userlist = [];
       for(var i in getUsers){
         userlist.push({

@@ -12,8 +12,9 @@
 	<script>
 	// anon function in this ($) context
 	$(function(){
+        var name = '<%= room_name%>';
 		var host = '<%- config.host %>';
-		var messages = io.connect("http://localhost:9000/messages/os");
+		var messages = io.connect("https://iiita-lectures.herokuapp.com/messages/"+name[0]+name[1]);
 		var roomNum = '<%- room_number %>';
 		var userName = '<%-user.fullname%>';
 		var userPic = '<%-user.profilePic%>';
