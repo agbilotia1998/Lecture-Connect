@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(session({secret:'I am lulululu', resave:true, saveUninitialized:true}));
+app.use(session({secret:'I am key', resave:true, saveUninitialized:true}));
 
 
 var env = process.env.NODE_ENV || 'development';
