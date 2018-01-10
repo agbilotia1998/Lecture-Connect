@@ -35,29 +35,18 @@
 	</script>
 </head>
 <body>
-	<div class="logo"></div>
-
-	<h2 class="title">LECTURE CONNECT</h2>
-
- <div id="main">
+<h2 class="title">LECTURE CONNECT</h2>
  	<br>
-		<div id="navigation">
-
-			<img src="../css/wl.svg" class="userPic">
+		<div>
 			<h3 class="userName"><%- user.fullname %></h3>
 			<a href="/user"><button class="nav">Home</button></a>
 			<a href="/user/gethelp"><button class="nav">Lecture Room</button></a>
-			<a href="/logout"><button class="nav">Logout</button></a>			
+			<a href="/logout"><button class="nav">Logout</button></a>
 		</div>
-		<br>
-		<br>
-		<br>
-		
 	<div id="platform">
 		<p>
 			Hello <%- user.fullname %>, Welcome to Lecture Connect.
 		</p>
 	</div>
-
 </body>
 </html>
