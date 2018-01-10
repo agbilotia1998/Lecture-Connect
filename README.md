@@ -17,8 +17,8 @@ Enter into the clone directory using ``` cd Lecture-Connect ```.
 Type ``` npm start ``` to start the server on your localhost.
 
 - Deploying the project on Heroku.
-Create a heroku account using heroku dashboard available on its website and create an app there.Under the deploy tab of your newly created app
-select connect to github and enter the name of your repository which you want to deploy.Wait for the app to be deployed.In case of errors use
+Create a heroku account.Create a new app.Under the deploy tab of your newly created app
+select 'connect to github' and enter the name of your repository which you want to deploy.Wait for the app to be deployed.In case of errors use
 heroku logs.
 
 ## Exploring the Project
