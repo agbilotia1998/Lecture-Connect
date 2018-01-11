@@ -30,7 +30,7 @@ In case of errors see heroku logs.
 Open ``` localhost:9000 ``` on your Chrome browser.
 
 Professor:
-  - Logging in with Professor's credentials. Use ``` professor ``` as username and ``` mypass123 ``` as password.
+  - Logging in with Professor's credentials. Use ``` professor ``` as username and ``` mypass ``` as password.
   - Type in the course name and select the language in which you wish to broadcast the translation.
   - Enter the room thus created.
   - Select language in which you wish to speak and start speaking.
